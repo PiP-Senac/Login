@@ -1,0 +1,800 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap');
+/*font-family: 'Open Sans', sans-serif;*/
+.siteManha:root{
+--background-image: url(./img/background-site-manha.png);
+--form-bgcolor:white;
+--font-textcolor:black;
+--bglinear:linear-gradient(to right, #fac123, #faaf23, #fa8b23, #fa7223);
+--bgshadow:0 4px 15px 0 rgba(253, 211, 21, 0.75);
+}
+
+.siteNoite:root{
+--background-image: url(./img/background-site-noite.png);
+--form-bgcolor:rgb(91 17 92);
+--font-textcolor:white;
+--bglinear: linear-gradient(to right, #ad00b1, #ff00e1, #f100d5,#950197);
+--bgshadow: 0 4px 15px 0 rgb(255 0 224 / 75%);
+}
+
+body {
+  overflow-y: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: var(--background-image);
+}
+
+
+div.error{
+  border-color: red;
+}
+
+div.success{
+  border-color:rgb(0, 199, 0);
+}
+
+div.focoAtual{
+  border-color: black;
+}
+
+.Login {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.formLogin{
+  display: flex;
+  flex-direction: column;
+  padding: 4.3rem;
+  background-color:var(--form-bgcolor);
+  padding-bottom: 2.3em;
+  border-radius: 4px;
+}
+
+.fieldEmail {
+  padding-bottom: 12px;
+}
+
+.labelEmail {
+  font-family: 'Helvética', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--font-textcolor);
+}
+
+.divSpanLabel__div {
+  display: flex;
+  width: 330px;
+  height: 40px;
+  background-color: rgb(255, 255, 255);
+  margin-top: 4px;
+  border: 1px solid rgb(211 211 211);
+}
+.divSpanLabel__div .divInputEmail{
+  padding: 0rem;
+}
+
+.divSpanLabel__div:hover {
+  border-color: rgb(150, 150, 150);
+  box-shadow: 0px 1px 2px rgba(172, 172, 172, 0.75);
+  }
+
+.divInputEmail +.divSpanLabel__div:focus{
+  border-color: black;
+}
+
+.divInputEmail {
+  display: inline-flex;
+  border: none;
+  width: 345px;
+  height: 30px;
+  font-family: 'Helvética', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  align-self: center;
+  background-color: rgb(255, 255, 255);
+}
+
+.divInputEmail::placeholder{
+  font-size: 14px;
+  font-family: 'Helvética', sans-serif;
+  font-weight: 400;
+}
+
+.divSpanEmail {
+  display: flex;
+  align-self: center;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.divSpanEmail__check {
+  display: flex;
+  align-self: center;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.uil-check {
+  font-size: 24px;
+  display: flex;
+}
+.uil-exclamation-triangle{
+  display: flex;
+  font: 24px;
+  color: red;
+}
+
+#iconCheck{
+display: flex;
+color: rgb(0, 218, 0);
+}
+
+.uil-at {
+  font-size: 24px;
+}
+
+.fieldSenha {
+  padding-bottom: 12px;
+}
+
+.labelSenha {
+  font-family: 'Helvética', sans-serif;
+  font-weight: 600;
+  color: var(--font-textcolor);
+  font-size: 15px;
+}
+
+.divSpanLabel__divSenha {
+  display: flex;
+  width: 330px;
+  border: 1px solid rgb(211 211 211);
+  height: 40px;
+  background-color: rgb(255, 255, 255);
+  margin-top: 4px;
+}
+
+.divSpanLabel__divSenha:hover {
+border-color: rgb(150, 150, 150);
+box-shadow: 0px 1px 2px rgba(172, 172, 172, 0.75);
+}
+
+
+.uil-key-skeleton-alt {
+  font-size: 25px;
+}
+
+.divInputSenha {
+  display: inline-flex;
+  border: none;
+  width: 345px;;
+  height: 30px;
+  align-self: center;
+  background-color: rgb(255, 255, 255);
+  font-size: 13px;
+  font-family: 'Helvética', sans-serif;
+  font-weight: 400;
+}
+
+.divInputSenha::placeholder{
+  font-size: 14px;
+  font-family: 'Helvética', sans-serif;
+  font-weight: 400;
+}
+
+.divSpanSenha {
+  display: flex;
+  align-self: center;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+
+.divSpanSenha__eye{
+display: flex;
+cursor: pointer;
+align-self: center;
+padding-right: 0.5rem;
+padding-left: 0.5rem;
+}
+
+.eyePassword{
+    width: 24px;
+}
+
+/* CheckBox */
+.div_RCheckBox{
+  width: 100%;
+  font-family: 'Helvética', sans-serif;
+  font-size: 13px;
+  display: inline-flex;
+  justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: row;
+  color: var(--font-textcolor);
+}
+
+.checkboxText_L{
+padding-left: 0.3rem;
+}
+
+.label_Checkbox{
+  display: flex;
+}
+
+.checkboxText{
+  color: var(--font-textcolor);
+}
+
+.checkboxText:hover{
+  color: rgb(253, 211, 21);
+}
+
+.cnf_Checkbox{
+background-color: gray;
+border-radius: 2px;
+width: .9rem;
+height: .9rem;
+}
+
+/* Button */
+.divBtn{
+    display: inline-flex;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.btnLogin{
+background-image: var(--bglinear);
+box-shadow: var(--bgshadow);
+cursor: pointer;
+font-family: 'Helvética', sans-serif;
+font-weight: 400;
+font-size: 17px;
+color: white;
+border: none;
+width: 200px;
+height: 45px;
+letter-spacing: 1px;
+background-size: 300% 100%;
+border-radius: 20px;
+-o-transition: all .4s ease-in-out;
+-webkit-transition: all .4s ease-in-out;
+transition: all .4s ease-in-out;
+}
+
+.btnLogin:hover{
+  outline: none;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-size: 20px;
+  transform: scale(.98);
+  background-position: 100% 0;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+
+}
+
+
+
+/* Nova Conta */
+.divNConta{
+    display: inline-flex;
+    justify-content: center;
+    font-family: 'Helvética', sans-serif;
+    font-weight: 400;
+    color: var(--font-textcolor);
+    padding-bottom: 12px;
+}
+
+/* Nova Conta Entra outras formas */
+
+.labelNConta{
+  font-family: 'Helvética', sans-serif;
+}
+
+.divLSpan{
+display: flex;
+
+}
+
+.labelNConta_icon{
+display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.divANConta_icon{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.divNConta_linkGoogle{
+  margin-right: 26px;
+  
+}
+
+.googleReg{
+  width: 40px;
+
+}
+
+.facebookReg{
+  width: 40px;
+}
+
+.LinkNAcc{
+  color: var(--font-textcolor);
+  font-size: 16px;
+}
+
+.LinkNAcc:hover{
+  color: rgb(253, 211, 21);
+  text-shadow: 1px 1px orange;
+}
+
+
+/* Media Query */
+
+/* Mobile S - min width */
+@media only screen and (min-device-width: 320px) and (max-device-width:374px) {
+  .formLogin{
+    padding: 2rem;
+  }
+  
+  .labelEmail {
+    font-weight: 700;
+    font-size: 14px;
+  }
+  
+  .divSpanLabel__div {
+    width: 235px;
+    height: 30px;
+  }
+
+  .divInputEmail {
+    font-size: 12px;
+    height: 28px;
+  }
+  
+  .divInputEmail::placeholder{
+    font-size: 12px;
+  }
+  
+  .uil-at{
+    font-size: 20px;
+  }
+
+  .labelSenha {
+    font-weight: 700;
+    font-size: 14px;
+  }
+  
+  .divSpanLabel__divSenha {
+  width: 235px;
+  height: 30px;
+  }
+  
+  
+  .uil-key-skeleton-alt {
+    font-size: 20px;
+  }
+  
+  .divInputSenha {
+    font-size: 12px;
+    height: 28px;
+  }
+  
+  .divInputSenha::placeholder{
+    font-size: 12px;
+  }
+  
+  .eyePassword{
+      width: 20px;
+  }
+
+  .div_RCheckBox{
+    width: 100%;
+    font-family: 'Helvética', sans-serif;
+    font-size: 12px;
+    color: var(--font-textcolor);
+  }
+  
+
+.btnLogin{
+font-family: 'Helvética', sans-serif;
+font-weight: 400;
+font-size: 12px;
+width: 130px;
+height: 35px;
+}
+
+.btnLogin:hover{
+  font-size: 15px;
+}
+
+
+
+/* Nova Conta */
+.divNConta{
+    color: var(--font-textcolor);
+    padding-bottom: 12px;
+}
+
+/* Nova Conta Entra outras formas */
+
+.labelNConta{
+  font-family: 'Helvética', sans-serif;
+}
+
+
+.divNConta_linkGoogle{
+  margin-right: 26px;
+  
+}
+
+.googleReg{
+  width: 30px;
+
+}
+
+.facebookReg{
+  width: 30px;
+}
+
+.LinkNAcc{
+  color: var(--font-textcolor);
+  font-size: 14px;
+}
+
+}
+
+
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 424px) {
+  .formLogin{
+    padding: 3rem;
+  }
+  
+  .labelEmail {
+    font-weight: 700;
+    font-size: 14px;
+  }
+  
+  .divSpanLabel__div {
+    width: 240px;
+    height: 35px;
+  }
+
+  .divInputEmail {
+    font-size: 12px;
+    height: 28px;
+  }
+  
+  .divInputEmail::placeholder{
+    font-size: 12px;
+  }
+  
+  .uil-at{
+    font-size: 20px;
+  }
+
+  .labelSenha {
+    font-weight: 700;
+    font-size: 14px;
+  }
+  
+  .divSpanLabel__divSenha {
+    width: 240px;
+    height: 35px;
+  }
+  
+  
+  .uil-key-skeleton-alt {
+    font-size: 20px;
+  }
+  
+  .divInputSenha {
+    font-size: 12px;
+    height: 28px;
+  }
+  
+  .divInputSenha::placeholder{
+    font-size: 12px;
+  }
+  
+  .eyePassword{
+      width: 20px;
+  }
+
+  .div_RCheckBox{
+    width: 100%;
+    font-family: 'Helvética', sans-serif;
+    font-size: 12px;
+    color: var(--font-textcolor);
+  }
+  
+
+.btnLogin{
+font-family: 'Helvética', sans-serif;
+font-weight: 400;
+font-size: 14px;
+width: 140px;
+height: 40px;
+}
+
+.btnLogin:hover{
+  font-size: 14px;
+}
+
+
+
+/* Nova Conta */
+.divNConta{
+    color: var(--font-textcolor);
+    padding-bottom: 1.1rem;
+}
+
+/* Nova Conta Entra outras formas */
+
+.labelNConta{
+  font-family: 'Helvética', sans-serif;
+}
+
+
+.googleReg{
+  width: 35px;
+}
+
+.facebookReg{
+  width: 35px;
+}
+
+.LinkNAcc{
+  color: var(--font-textcolor);
+  font-size: 14px;
+}
+}
+
+
+@media only screen and (min-device-width: 425px) and (max-device-width: 496px) {
+  .formLogin{
+    padding: 4rem;
+  }
+  
+  .labelEmail {
+    font-weight: 700;
+    font-size: 15px;
+  }
+  
+  .divSpanLabel__div {
+    width: 260px;
+    height: 40px;
+  }
+
+  .divInputEmail {
+    font-size: 12px;
+    height: 28px;
+  }
+  
+  .divInputEmail::placeholder{
+    font-size: 12px;
+  }
+  
+  .uil-at{
+    font-size: 20px;
+  }
+
+  .labelSenha {
+    font-weight: 700;
+    font-size: 15px;
+  }
+  
+  .divSpanLabel__divSenha {
+    width: 260px;
+    height: 40px;
+  }
+  
+  
+  .uil-key-skeleton-alt {
+    font-size: 20px;
+  }
+  
+  .divInputSenha {
+    font-size: 12px;
+    height: 28px;
+  }
+  
+  .divInputSenha::placeholder{
+    font-size: 12px;
+  }
+  
+  .eyePassword{
+      width: 20px;
+  }
+
+  .div_RCheckBox{
+    width: 100%;
+    font-family: 'Helvética', sans-serif;
+    font-size: 12px;
+    color: var(--font-textcolor);
+  }
+  
+
+.btnLogin{
+font-family: 'Helvética', sans-serif;
+font-weight: 400;
+font-size: 14px;
+width: 150px;
+height: 40px;
+}
+
+.btnLogin:hover{
+  font-size: 18px;
+}
+
+
+
+/* Nova Conta */
+.divNConta{
+    color: var(--font-textcolor);
+    padding-bottom: 1.1rem;
+}
+
+/* Nova Conta Entra outras formas */
+
+.labelNConta{
+  font-family: 'Helvética', sans-serif;
+}
+
+
+.googleReg{
+  width: 40px;
+}
+
+.facebookReg{
+  width: 40px;
+}
+
+.LinkNAcc{
+  color: var(--font-textcolor);
+  font-size: 14px;
+}
+}
+
+@media only screen and (min-device-width: 497px) and (max-device-width: 767px) {
+  .formLogin{
+    padding: 4rem;
+  }
+  
+  .labelEmail {
+    font-weight: 700;
+    font-size: 15px;
+  }
+  
+  .divSpanLabel__div {
+    width: 290px;
+    height: 40px;
+  }
+
+  .divInputEmail {
+    font-size: 12px;
+    height: 28px;
+  }
+  
+  .divInputEmail::placeholder{
+    font-size: 12px;
+  }
+  
+  .uil-at{
+    font-size: 20px;
+  }
+
+  .labelSenha {
+    font-weight: 700;
+    font-size: 15px;
+  }
+  
+  .divSpanLabel__divSenha {
+    width: 290px;
+    height: 40px;
+  }
+  
+  
+  .uil-key-skeleton-alt {
+    font-size: 20px;
+  }
+  
+  .divInputSenha {
+    font-size: 12px;
+    height: 28px;
+  }
+  
+  .divInputSenha::placeholder{
+    font-size: 12px;
+  }
+  
+  .eyePassword{
+      width: 20px;
+  }
+
+  .div_RCheckBox{
+    width: 100%;
+    font-family: 'Helvética', sans-serif;
+    font-size: 13px;
+    color: var(--font-textcolor);
+  }
+  
+
+.btnLogin{
+font-family: 'Helvética', sans-serif;
+font-weight: 400;
+font-size: 14px;
+width: 150px;
+height: 40px;
+}
+
+.btnLogin:hover{
+  font-size: 18px;
+}
+
+
+
+/* Nova Conta */
+.divNConta{
+    color: var(--font-textcolor);
+    padding-bottom: 1.1rem;
+}
+
+/* Nova Conta Entra outras formas */
+
+.labelNConta{
+  font-family: 'Helvética', sans-serif;
+}
+
+
+.googleReg{
+  width: 40px;
+}
+
+.facebookReg{
+  width: 40px;
+}
+
+.LinkNAcc{
+  color: var(--font-textcolor);
+  font-size: 14px;
+}
+}
+
+@media only screen and (max-device-width: 768px) {
+  .text {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-device-width: 1024px) {
+  .text {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-device-width: 1440px) {
+  .text {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-device-width: 2560px) {
+  .text {
+    font-size: 16px;
+  }
+}
+
+
