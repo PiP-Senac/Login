@@ -42,61 +42,7 @@ $(document).ready(function(){
     });
 
 
-/* Email */
-function validacaoEmail(field) {
-    usuario = field.value.substring(0, field.value.indexOf("@"));
-    dominio = field.value.substring(field.value.indexOf("@")+ 1, field.value.length);
-    
-    //Email Valido 
-    if ((usuario.length >=1) &&
-        (dominio.length >=3) &&
-        (usuario.search("@")==-1) &&
-        (dominio.search("@")==-1) &&
-        (usuario.search(" ")==-1) &&
-        (dominio.search(" ")==-1) &&
-        (dominio.search(".")!=-1) &&
-        (dominio.indexOf(".") >=1)&&
-        (dominio.lastIndexOf(".") < dominio.length - 1)) {
-
-
-        }
-    else{
-    alert("E-mail invalido");
-    }
-   
-}
- 
-
- let colorG = document.querySelector('#inputEmail');
-
- colorG.addEventListener('blur', function(){
-    let lblEmail = document.querySelector('divSpanLabel__div');
-    lblEmail.classList.toggle ="sucess";
- 
- });
-
- var pressed = document.getElementById('inputEmail');
-
- function keyPressed(evt){
-     evt = evt || window.event;
-     var key = evt.keyCode || evt.which;
-     return String.fromCharCode(key); 
-
-    }
-    document.onkeypress = function(evt) {
-        var str = keyPressed(evt);
-        
-        if((str == "@")||
-          (str == ".")){
-            document.getElementById('iconcheck').classList.toggle = 'uil-check';
-          }else{
-            document.getElementById('iconcheck').classList.toggle = 'uil-exclamation-triangle';
-
-
-          }
-        };
-          
-        
+/* Email */  
         function valid(element) {
           $(element)
             .closest('.divSpanLabel__div')

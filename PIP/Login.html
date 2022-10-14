@@ -1,88 +1,156 @@
 <!DOCTYPE html>
-<html lang="pt-br" class="">
-
-<head>
+<html lang="pt-br">
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="normalize.css" />
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
-    <script src="https://kit.fontawesome.com/8743b031e5.js" crossorigin="anonymous"></script>
-    <title>Login</title>
-</head>
+    <!-- fav icon 
+    <link rel="apple-touch-icon" sizes="57x57" href="">
+    <link rel="apple-touch-icon" sizes="60x60" href="">
+    <link rel="apple-touch-icon" sizes="72x72" href="">
+    <link rel="apple-touch-icon" sizes="76x76" href="">
+    <link rel="apple-touch-icon" sizes="114x114" href="">
+    <link rel="apple-touch-icon" sizes="120x120" href="">
+    <link rel="apple-touch-icon" sizes="144x144" href="">
+    <link rel="apple-touch-icon" sizes="152x152" href="">
+    <link rel="apple-touch-icon" sizes="180x180" href="">
+    <link rel="icon" type="image/png" sizes="192x192"  href="">
+    <link rel="icon" type="image/png" sizes="32x32" href="">
+    <link rel="icon" type="image/png" sizes="96x96" href="">
+    <link rel="icon" type="image/png" sizes="16x16" href=""> -->
 
-<body>
+    <!-- link css -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/8743b031e5.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Login | PIP</title>
+  </head>
+
+  <body>
     <div class="Login">
-        <form action="./php/login.php" name="formLogin" method="post" class="formLogin">
-            <!--|||------------Email------------|||-->
-            <div class="fieldEmail">
-           
-                    <label for="inputEmail" class="fieldEmail labelEmail">Email</label>
-                    <div class="divSpanLabel__div" id="div_Email">
-                        <span class="divSpanEmail"><label for="inputEmail"><i class="uil uil-at"></i></label></span>
-                        <input type="email" placeholder="Email" onblur="validacaoEmail(formLogin.email)" 
-                            id="inputEmail" name="Email" class="divInputEmail" required aria-required="true" />
-                        <span class="divSpanEmail__check"><i id="iconcheck" class="uil"></i></span>
-                        <!-- <i class="uil uil-eye-slash" uil-exclamation-triangle uil-check></i> -->
-                        
-                    </div>
-            
+      <form
+        action="./php/login.php"
+        name="formLogin"
+        method="post"
+        class="formLogin"
+      >
+        <!--|||------------Email------------|||-->
+        <div class="fieldEmail">
+          <label for="inputEmail" class="fieldEmail labelEmail">
+          <div class="divSpanLabel__div" id="div_Email">
+            <span class="divSpanEmail"
+              ><label for="inputEmail"><i class="uil uil-at"></i></label
+            ></span>
+            <input
+              type="email"
+              placeholder="Email"
+              id="inputEmail"
+              name="Email"
+              class="divInputEmail"
+              required
+              aria-required="true"
+              autocomplete="off"
+            />
+            <span class="divSpan_email">Email</span>
+            <span class="divSpanEmail__check"
+              ><i id="iconcheck" class="uil"></i
+            ></span>
+            <!-- <i class="uil uil-eye-slash" uil-exclamation-triangle uil-check></i> -->
+          </div>
+        </label>
+        </div>
+
+        <!--|||------------Senha------------|||-->
+        <div class="fieldSenha">
+          <label for="inputSenha" class="fieldSenha labelSenha">
+          <div class="divSpanLabel__divSenha">
+            <span class="divSpanSenha"
+              ><label for="inputSenha"
+                ><i class="uil uil-key-skeleton-alt"></i></label
+            ></span>
+            <input
+              type="password"
+              placeholder="Senha"
+              class="divInputSenha"
+              name="Senha"
+              minlength="8"
+              required
+              aria-required="true"
+              id="inputSenha"
+            />
+            <span class="divSpan_senha">Senha</span>
+            <span class="divSpanSenha__eye"
+              ><img
+                src="img/olhos-cruzados.svg"
+                class="eyePassword"
+                id="olho"
+                alt="Senha"
+            /></span>
+          </div>
+        </label>
+        </div>
+
+        <!--|||------------CheckBox & Senha ------------|||-->
+        <div class="div_RCheckBox">
+          <label class="label_Checkbox">
+            <input type="checkbox" name="checkbox" class="cnf_Checkbox" />
+            <span class="checkboxText_L">Lembrar-me</span>
+          </label>
+          <label for="linkRSenha" class="labelRSenha">
+            <a name="linkRSenha" href="RecuperarSenha.html" class="linkRSenha"
+              ><span class="checkboxText">Esqueceu a Senha?</span></a
+            >
+          </label>
+        </div>
+
+        <!--|||------------Button------------|||-->
+        <div class="divBtn">
+          <button type="submit" class="btnLogin">Entrar</button>
+        </div>
+
+        <!--|||----------Nova-Conta----------|||-->
+        <div class="divNConta">
+          <label for="linkRegistro" class="labelNConta">
+            <a name="linkRegistro" class="linkNConta" href="Registro.html"
+              ><span class="LinkNAcc">Ainda não tenho uma Conta</span></a
+            >
+          </label>
+        </div>
+   <!--  
+        <div class="divANConta_icon">
+          <label for="" class="labelNConta_icon">
+            <div class="divNConta_linkGoogle">
+              <a href=""
+                ><img
+                  src="img/google_icon.png"
+                  class="googleReg"
+                  alt="google_reg"
+              /></a>
             </div>
-
-            <!--|||------------Senha------------|||-->
-            <div class="fieldSenha">
-                    <label for="inputSenha" class="fieldSenha labelSenha">Senha</label>
-                    <div class="divSpanLabel__divSenha" >
-                        <span class="divSpanSenha"><label for="inputSenha"><i class="uil uil-key-skeleton-alt"></i></label></span>
-                        <input type="password" placeholder="Senha" class="divInputSenha" name="Senha" minlength="8" required
-                            aria-required="true" id="inputSenha" />
-                        <span class="divSpanSenha__eye"><img src="img/olhos-cruzados.svg" class="eyePassword" id="olho"
-                                alt="Senha" /></span>
-                    </div>
+            <div class="divNConta_linkFacebook">
+              <a href=""
+                ><img
+                  src="img/facebook_icon.png"
+                  class="facebookReg"
+                  alt="facebook_reg"
+              /></a>
             </div>
-
-            <!--|||------------CheckBox------------|||-->
-            <div class="div_RCheckBox">
-            <label class="label_Checkbox">
-                <input type="checkbox" name="checkbox" class="cnf_Checkbox" />
-                <span class="checkboxText_L">Lembrar-me</span>
-                </label>
-                <label for="linkRSenha" class="labelRSenha">
-                    <a name="linkRSenha" href="RecuperarSenha.html" class="linkRSenha"><span class="checkboxText">Esqueceu a Senha?</span></a>
-                   </label>            
-            </div>
-
-            <!--|||------------Button------------|||-->
-            <div class="divBtn">
-                <button class="btnLogin">LOGIN</button>
-            </div>
-
-            <!--|||----------Nova-Conta----------|||-->
-             <div class="divNConta">
-                 <label for="linkRegistro" class="labelNConta">
-                     <a name="linkRegistro" class="linkNConta" href="Registro.html"><span class="LinkNAcc">Ainda não sou um treinador Pokémon</span></a>
-                    </label>
-                </div>
-
-
-            <div class="divANConta_icon">
-                <label for="" class="labelNConta_icon">
-                    <div class="divNConta_linkGoogle">
-                    <a href=""><img src="img/google_icon.png"class="googleReg" alt="google_reg"></a>
-                </div>
-                <div class="divNConta_linkFacebook">
-                    <a href=""><img src="img/facebook_icon.png" class="facebookReg" alt="facebook_reg"></a>   
-                </div>
-                </label>
-            </div>
-        </form>
+          </label>
+        </div>
+-->
+        
+      </form>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="script.js"></script>
-    <script src="horas.js"></script>
+    <script src="./js/Login.js"></script>
     <script type="text/javascript" src="../vendors/scrolloverflow.js"></script>
     <script type="text/javascript" src="../jquery.fullPage.js"></script>
-</body>
-
+  </body>
 </html>

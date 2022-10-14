@@ -1,40 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap');
 /*font-family: 'Open Sans', sans-serif;*/
-.siteManha:root{
---background-image: url(./img/background-site-manha.png);
+:root{
+--background-image: #2c2cda;
 --form-bgcolor:white;
 --font-textcolor:black;
---bglinear:linear-gradient(to right, #fac123, #faaf23, #fa8b23, #fa7223);
---bgshadow:0 4px 15px 0 rgba(253, 211, 21, 0.75);
-}
-
-.siteNoite:root{
---background-image: url(./img/background-site-noite.png);
---form-bgcolor:rgb(91 17 92);
---font-textcolor:white;
---bglinear: linear-gradient(to right, #ad00b1, #ff00e1, #f100d5,#950197);
---bgshadow: 0 4px 15px 0 rgb(255 0 224 / 75%);
+--bgbutton: #3030ff;
+--bgshadow:0 4px 15px 0 #4949FF;
 }
 
 body {
   overflow-y: hidden;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: var(--background-image);
+  background-color: var(--background-image);
 }
 
 
 div.error{
-  border-color: red;
+  border-color: #e57f7f;
 }
 
 div.success{
-  border-color:rgb(0, 199, 0);
+  border-color:#8dde8d;
 }
 
 div.focoAtual{
-  border-color: black;
+  border-color: rgb(61, 61, 61);
 }
 
 .Login {
@@ -52,7 +42,7 @@ div.focoAtual{
   padding: 4.3rem;
   background-color:var(--form-bgcolor);
   padding-bottom: 2.3em;
-  border-radius: 4px;
+  border-radius: 10px;
 }
 
 .fieldEmail {
@@ -68,11 +58,13 @@ div.focoAtual{
 
 .divSpanLabel__div {
   display: flex;
+  position: relative;
   width: 330px;
   height: 40px;
   background-color: rgb(255, 255, 255);
   margin-top: 4px;
   border: 1px solid rgb(211 211 211);
+  border-radius: 3px;
 }
 .divSpanLabel__div .divInputEmail{
   padding: 0rem;
@@ -83,18 +75,71 @@ div.focoAtual{
   box-shadow: 0px 1px 2px rgba(172, 172, 172, 0.75);
   }
 
-.divInputEmail +.divSpanLabel__div:focus{
-  border-color: black;
-}
+  .divInputEmail::placeholder{
+    opacity: 0%;
+  }
+
+  .divInputEmail +.divSpan_email{
+    position: absolute;
+    top: 11px;
+    left: 2.5rem;
+    font-size: 14px;
+  font-family: 'Helvética', sans-serif;
+  font-weight: 400;
+  background-color: white;
+  color: #797575;
+  transition: all ease-out .2s;
+  padding: 0rem .2rem;
+  }
+
+  .divInputEmail:focus +.divSpan_email,.divInputEmail:not(:placeholder-shown) + .divSpan_email{
+    position: absolute;
+    font-family: 'Helvética', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--font-textcolor);
+    top: -9px;
+    left: 1.6rem;
+    color: black;
+    transition: all ease-out .2s;
+  }
+
+  .divInputSenha +.divSpan_senha{
+  position: absolute;
+  top: 11px;
+  left: 2.5rem;
+  font-size: 14px;
+  font-family: 'Helvética', sans-serif;
+  font-weight: 400;
+  background-color: white;
+  color: #797575;
+  transition: all ease-out .2s;
+  padding: 0rem .2rem;
+  }
+
+  .divInputSenha:focus +.divSpan_senha,.divInputSenha:not(:placeholder-shown) + .divSpan_senha{
+    position: absolute;
+    font-family: 'Helvética', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--font-textcolor);
+    top: -9px;
+    left: 1.6rem;
+    transition: all ease-out .2s;
+  }
+
+  .divInputSenha::placeholder{
+    opacity: 0%;
+  }
 
 .divInputEmail {
-  display: inline-flex;
+  display: flex;
   border: none;
   width: 345px;
   height: 30px;
   font-family: 'Helvética', sans-serif;
   font-weight: 400;
-  font-size: 13px;
+  font-size: 14px;
   align-self: center;
   background-color: rgb(255, 255, 255);
 }
@@ -151,8 +196,10 @@ color: rgb(0, 218, 0);
 
 .divSpanLabel__divSenha {
   display: flex;
+  position: relative;
   width: 330px;
   border: 1px solid rgb(211 211 211);
+  border-radius: 3px;
   height: 40px;
   background-color: rgb(255, 255, 255);
   margin-top: 4px;
@@ -169,13 +216,13 @@ box-shadow: 0px 1px 2px rgba(172, 172, 172, 0.75);
 }
 
 .divInputSenha {
-  display: inline-flex;
+  display:flex;
   border: none;
   width: 345px;;
   height: 30px;
   align-self: center;
   background-color: rgb(255, 255, 255);
-  font-size: 13px;
+  font-size: 14px;
   font-family: 'Helvética', sans-serif;
   font-weight: 400;
 }
@@ -213,9 +260,10 @@ padding-left: 0.5rem;
   font-size: 13px;
   display: inline-flex;
   justify-content: space-between;
-    flex-wrap: nowrap;
-    flex-direction: row;
+  flex-wrap: nowrap;
+  flex-direction: row;
   color: var(--font-textcolor);
+  margin: .1rem 0rem .7rem 0rem;
 }
 
 .checkboxText_L{
@@ -231,7 +279,7 @@ padding-left: 0.3rem;
 }
 
 .checkboxText:hover{
-  color: rgb(253, 211, 21);
+  color: #4949FF;
 }
 
 .cnf_Checkbox{
@@ -250,34 +298,21 @@ height: .9rem;
 }
 
 .btnLogin{
-background-image: var(--bglinear);
-box-shadow: var(--bgshadow);
+background-color: var(--bgbutton);
 cursor: pointer;
 font-family: 'Helvética', sans-serif;
-font-weight: 400;
-font-size: 17px;
+font-weight: 600;
+font-size: 16px;
 color: white;
 border: none;
-width: 200px;
-height: 45px;
+width: 100%;
+height: 2.7rem;
 letter-spacing: 1px;
-background-size: 300% 100%;
-border-radius: 20px;
--o-transition: all .4s ease-in-out;
--webkit-transition: all .4s ease-in-out;
-transition: all .4s ease-in-out;
+border-radius: 3px;
 }
 
 .btnLogin:hover{
-  outline: none;
-  letter-spacing: 2px;
-  font-weight: 600;
-  font-size: 20px;
-  transform: scale(.98);
-  background-position: 100% 0;
-  -o-transition: all .4s ease-in-out;
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
+opacity: 85%;
 
 }
 
@@ -290,7 +325,7 @@ transition: all .4s ease-in-out;
     font-family: 'Helvética', sans-serif;
     font-weight: 400;
     color: var(--font-textcolor);
-    padding-bottom: 12px;
+    margin: 1rem 0rem;
 }
 
 /* Nova Conta Entra outras formas */
@@ -310,9 +345,11 @@ display: flex;
     flex-wrap: nowrap;
 }
 
+/*  
 .divANConta_icon{
   display: flex;
   justify-content: space-evenly;
+  margin-top: 1rem;
 }
 
 .divNConta_linkGoogle{
@@ -328,15 +365,14 @@ display: flex;
 .facebookReg{
   width: 40px;
 }
-
+*/
 .LinkNAcc{
   color: var(--font-textcolor);
   font-size: 16px;
 }
 
 .LinkNAcc:hover{
-  color: rgb(253, 211, 21);
-  text-shadow: 1px 1px orange;
+  color: #4949FF;
 }
 
 

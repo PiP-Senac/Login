@@ -8,9 +8,8 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
- html {
+html {
   line-height: 1.15; /* 1 */
-  -webkit-text-size-adjust: 100%; /* 2 */
 }
 
 /* Sections
@@ -75,8 +74,6 @@ pre {
 
 a {
   background-color: transparent;
-  text-decoration: none;
-  text-decoration: none !important;
 }
 
 /**
@@ -331,11 +328,6 @@ summary {
   display: list-item;
 }
 
-input:focus {
-  box-shadow: 0 0 0 0;
-  outline: 0;
-}
-
 /* Misc
    ========================================================================== */
 
@@ -355,3 +347,17 @@ template {
   display: none;
 }
 
+
+input[type=email], input[type=password] {
+  outline: none
+}
+
+textarea:focus, input:focus, select:focus {
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+} 
+
+a{
+  text-decoration: none;
+}
