@@ -19,7 +19,7 @@ div.error{
   border-color: #e57f7f;
 }
 
-div.success{
+div.sucess{
   border-color:#8dde8d;
 }
 
@@ -27,7 +27,7 @@ div.focoAtual{
   border-color: rgb(61, 61, 61);
 }
 
-.Login {
+.pip-login_container {
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -36,7 +36,7 @@ div.focoAtual{
   align-items: center;
 }
 
-.formLogin{
+.pip-form_container{
   display: flex;
   flex-direction: column;
   padding: 4.3rem;
@@ -45,18 +45,19 @@ div.focoAtual{
   border-radius: 10px;
 }
 
-.fieldEmail {
+.pip-div_Email{
   padding-bottom: 12px;
 }
 
-.labelEmail {
+.pip-label_Email {
+  padding-bottom: 12px;
   font-family: 'Helvética', sans-serif;
   font-weight: 600;
   font-size: 15px;
   color: var(--font-textcolor);
 }
 
-.divSpanLabel__div {
+.pip-div__Email {
   display: flex;
   position: relative;
   width: 330px;
@@ -66,20 +67,20 @@ div.focoAtual{
   border: 1px solid rgb(211 211 211);
   border-radius: 3px;
 }
-.divSpanLabel__div .divInputEmail{
+.pip-div__Email .pip-inp_Email{
   padding: 0rem;
 }
 
-.divSpanLabel__div:hover {
+.pip-div__Email:hover {
   border-color: rgb(150, 150, 150);
   box-shadow: 0px 1px 2px rgba(172, 172, 172, 0.75);
   }
 
-  .divInputEmail::placeholder{
+  .pip-inp_Email::placeholder{
     opacity: 0%;
   }
 
-  .divInputEmail +.divSpan_email{
+  .pip-inp_Email +.pip-span__Email{
     position: absolute;
     top: 11px;
     left: 2.5rem;
@@ -92,7 +93,7 @@ div.focoAtual{
   padding: 0rem .2rem;
   }
 
-  .divInputEmail:focus +.divSpan_email,.divInputEmail:not(:placeholder-shown) + .divSpan_email{
+  .pip-inp_Email:focus +.pip-span__Email,.pip-inp_Email:not(:placeholder-shown) + .pip-span__Email{
     position: absolute;
     font-family: 'Helvética', sans-serif;
     font-weight: 600;
@@ -104,7 +105,7 @@ div.focoAtual{
     transition: all ease-out .2s;
   }
 
-  .divInputSenha +.divSpan_senha{
+  .pip-inp_Senha +.pip-span__Senha{
   position: absolute;
   top: 11px;
   left: 2.5rem;
@@ -117,7 +118,7 @@ div.focoAtual{
   padding: 0rem .2rem;
   }
 
-  .divInputSenha:focus +.divSpan_senha,.divInputSenha:not(:placeholder-shown) + .divSpan_senha{
+  .pip-inp_Senha:focus +.pip-span__Senha,.pip-inp_Senha:not(:placeholder-shown) + .pip-span__Senha{
     position: absolute;
     font-family: 'Helvética', sans-serif;
     font-weight: 600;
@@ -128,11 +129,11 @@ div.focoAtual{
     transition: all ease-out .2s;
   }
 
-  .divInputSenha::placeholder{
+  .pip-inp_Senha::placeholder{
     opacity: 0%;
   }
 
-.divInputEmail {
+.pip-inp_Email {
   display: flex;
   border: none;
   width: 345px;
@@ -144,26 +145,176 @@ div.focoAtual{
   background-color: rgb(255, 255, 255);
 }
 
-.divInputEmail::placeholder{
+.pip-inp_Email::placeholder{
   font-size: 14px;
   font-family: 'Helvética', sans-serif;
   font-weight: 400;
 }
 
-.divSpanEmail {
+.pip-span_Email {
   display: flex;
   align-self: center;
   padding-right: 0.5rem;
   padding-left: 0.5rem;
 }
 
-.divSpanEmail__check {
+.pip-span_Email__check {
   display: flex;
   align-self: center;
   padding-right: 0.5rem;
   padding-left: 0.5rem;
 }
 
+.pip-div_Senha {
+  padding-bottom: 12px;
+}
+
+.pip-label_Senha {
+  font-family: 'Helvética', sans-serif;
+  font-weight: 600;
+  color: var(--font-textcolor);
+  font-size: 15px;
+  padding-bottom: 12px;
+}
+
+.pip-div__Senha {
+  display: flex;
+  position: relative;
+  width: 330px;
+  border: 1px solid rgb(211 211 211);
+  border-radius: 3px;
+  height: 40px;
+  background-color: rgb(255, 255, 255);
+  margin-top: 4px;
+}
+
+.pip-div__Senha:hover {
+border-color: rgb(150, 150, 150);
+box-shadow: 0px 1px 2px rgba(172, 172, 172, 0.75);
+}
+
+.pip-inp_Senha {
+  display:flex;
+  border: none;
+  width: 345px;;
+  height: 30px;
+  align-self: center;
+  background-color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-family: 'Helvética', sans-serif;
+  font-weight: 400;
+}
+
+.pip-inp_Senha::placeholder{
+  font-size: 14px;
+  font-family: 'Helvética', sans-serif;
+  font-weight: 400;
+}
+
+.pip-span_Senha {
+  display: flex;
+  align-self: center;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+
+.pip-span_eyeSenha{
+display: flex;
+cursor: pointer;
+align-self: center;
+padding-right: 0.5rem;
+padding-left: 0.5rem;
+}
+
+.pip-img_eyeSenha{
+    width: 20px;
+    opacity: 40%;
+}
+
+/* CheckBox */
+.pip-div_Checkbox{
+  width: 100%;
+  font-family: 'Helvética', sans-serif;
+  font-size: 13px;
+  display: inline-flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  color: var(--font-textcolor);
+  margin: .1rem 0rem .7rem 0rem;
+}
+
+.pip-span_Checkbox{
+padding-left: 0.3rem;
+}
+
+.pip-label_Checkbox{
+  display: flex;
+}
+
+.pip-span_ESenha{
+  color: var(--font-textcolor);
+}
+
+.pip-span_ESenha:hover{
+  color: #4949FF;
+}
+
+.pip-inp_Checkbox{
+background-color: gray;
+border-radius: 2px;
+width: .9rem;
+height: .9rem;
+}
+
+/* Button */
+.pip-div_Btnlogin{
+    display: inline-flex;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.pip-btn_Btnlogin{
+background-color: var(--bgbutton);
+cursor: pointer;
+font-family: 'Helvética', sans-serif;
+font-weight: 600;
+font-size: 16px;
+color: white;
+border: none;
+width: 100%;
+height: 2.7rem;
+letter-spacing: 1px;
+border-radius: 3px;
+}
+
+.pip-btn_Btnlogin:hover{
+opacity: 80%;
+
+}
+
+/* Nova Conta */
+.pip-div_NConta{
+    display: inline-flex;
+    justify-content: center;
+    font-family: 'Helvética', sans-serif;
+    font-weight: 400;
+    margin: 1rem 0rem;
+}
+
+.pip-span_NConta{
+  color: var(--font-textcolor);
+  font-size: 16px;
+}
+
+.pip-span_NConta:hover{
+  color: #9595ed;
+}
+
+
+/* Icons */
 .uil-check {
   font-size: 24px;
   display: flex;
@@ -183,196 +334,9 @@ color: rgb(0, 218, 0);
   font-size: 24px;
 }
 
-.fieldSenha {
-  padding-bottom: 12px;
-}
-
-.labelSenha {
-  font-family: 'Helvética', sans-serif;
-  font-weight: 600;
-  color: var(--font-textcolor);
-  font-size: 15px;
-}
-
-.divSpanLabel__divSenha {
-  display: flex;
-  position: relative;
-  width: 330px;
-  border: 1px solid rgb(211 211 211);
-  border-radius: 3px;
-  height: 40px;
-  background-color: rgb(255, 255, 255);
-  margin-top: 4px;
-}
-
-.divSpanLabel__divSenha:hover {
-border-color: rgb(150, 150, 150);
-box-shadow: 0px 1px 2px rgba(172, 172, 172, 0.75);
-}
-
 
 .uil-key-skeleton-alt {
   font-size: 25px;
-}
-
-.divInputSenha {
-  display:flex;
-  border: none;
-  width: 345px;;
-  height: 30px;
-  align-self: center;
-  background-color: rgb(255, 255, 255);
-  font-size: 14px;
-  font-family: 'Helvética', sans-serif;
-  font-weight: 400;
-}
-
-.divInputSenha::placeholder{
-  font-size: 14px;
-  font-family: 'Helvética', sans-serif;
-  font-weight: 400;
-}
-
-.divSpanSenha {
-  display: flex;
-  align-self: center;
-  padding-right: 0.5rem;
-  padding-left: 0.5rem;
-}
-
-
-.divSpanSenha__eye{
-display: flex;
-cursor: pointer;
-align-self: center;
-padding-right: 0.5rem;
-padding-left: 0.5rem;
-}
-
-.eyePassword{
-    width: 24px;
-}
-
-/* CheckBox */
-.div_RCheckBox{
-  width: 100%;
-  font-family: 'Helvética', sans-serif;
-  font-size: 13px;
-  display: inline-flex;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  color: var(--font-textcolor);
-  margin: .1rem 0rem .7rem 0rem;
-}
-
-.checkboxText_L{
-padding-left: 0.3rem;
-}
-
-.label_Checkbox{
-  display: flex;
-}
-
-.checkboxText{
-  color: var(--font-textcolor);
-}
-
-.checkboxText:hover{
-  color: #4949FF;
-}
-
-.cnf_Checkbox{
-background-color: gray;
-border-radius: 2px;
-width: .9rem;
-height: .9rem;
-}
-
-/* Button */
-.divBtn{
-    display: inline-flex;
-    justify-content: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-}
-
-.btnLogin{
-background-color: var(--bgbutton);
-cursor: pointer;
-font-family: 'Helvética', sans-serif;
-font-weight: 600;
-font-size: 16px;
-color: white;
-border: none;
-width: 100%;
-height: 2.7rem;
-letter-spacing: 1px;
-border-radius: 3px;
-}
-
-.btnLogin:hover{
-opacity: 85%;
-
-}
-
-
-
-/* Nova Conta */
-.divNConta{
-    display: inline-flex;
-    justify-content: center;
-    font-family: 'Helvética', sans-serif;
-    font-weight: 400;
-    color: var(--font-textcolor);
-    margin: 1rem 0rem;
-}
-
-/* Nova Conta Entra outras formas */
-
-.labelNConta{
-  font-family: 'Helvética', sans-serif;
-}
-
-.divLSpan{
-display: flex;
-
-}
-
-.labelNConta_icon{
-display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-}
-
-/*  
-.divANConta_icon{
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 1rem;
-}
-
-.divNConta_linkGoogle{
-  margin-right: 26px;
-  
-}
-
-.googleReg{
-  width: 40px;
-
-}
-
-.facebookReg{
-  width: 40px;
-}
-*/
-.LinkNAcc{
-  color: var(--font-textcolor);
-  font-size: 16px;
-}
-
-.LinkNAcc:hover{
-  color: #4949FF;
 }
 
 
@@ -394,12 +358,12 @@ display: flex;
     height: 30px;
   }
 
-  .divInputEmail {
+  .pip-inp_Email {
     font-size: 12px;
     height: 28px;
   }
   
-  .divInputEmail::placeholder{
+  .pip-inp_Email::placeholder{
     font-size: 12px;
   }
   
@@ -407,12 +371,12 @@ display: flex;
     font-size: 20px;
   }
 
-  .labelSenha {
+  .pip-label_Senha {
     font-weight: 700;
     font-size: 14px;
   }
   
-  .divSpanLabel__divSenha {
+  .pip-div__Senha {
   width: 235px;
   height: 30px;
   }
@@ -422,16 +386,16 @@ display: flex;
     font-size: 20px;
   }
   
-  .divInputSenha {
+  .pip-inp_Senha {
     font-size: 12px;
     height: 28px;
   }
   
-  .divInputSenha::placeholder{
+  .pip-inp_Senha::placeholder{
     font-size: 12px;
   }
   
-  .eyePassword{
+  .pip-img_eyeSenha{
       width: 20px;
   }
 
@@ -443,7 +407,7 @@ display: flex;
   }
   
 
-.btnLogin{
+.pip-btn_Btnlogin{
 font-family: 'Helvética', sans-serif;
 font-weight: 400;
 font-size: 12px;
@@ -451,21 +415,21 @@ width: 130px;
 height: 35px;
 }
 
-.btnLogin:hover{
+.pip-btn_Btnlogin:hover{
   font-size: 15px;
 }
 
 
 
 /* Nova Conta */
-.divNConta{
+.pip-div_NConta{
     color: var(--font-textcolor);
     padding-bottom: 12px;
 }
 
 /* Nova Conta Entra outras formas */
 
-.labelNConta{
+.pip-label_NConta{
   font-family: 'Helvética', sans-serif;
 }
 
@@ -475,16 +439,7 @@ height: 35px;
   
 }
 
-.googleReg{
-  width: 30px;
-
-}
-
-.facebookReg{
-  width: 30px;
-}
-
-.LinkNAcc{
+.pip-span_NConta{
   color: var(--font-textcolor);
   font-size: 14px;
 }
@@ -508,12 +463,12 @@ height: 35px;
     height: 35px;
   }
 
-  .divInputEmail {
+  .pip-inp_Email {
     font-size: 12px;
     height: 28px;
   }
   
-  .divInputEmail::placeholder{
+  .pip-inp_Email::placeholder{
     font-size: 12px;
   }
   
@@ -521,12 +476,12 @@ height: 35px;
     font-size: 20px;
   }
 
-  .labelSenha {
+  .pip-label_Senha {
     font-weight: 700;
     font-size: 14px;
   }
   
-  .divSpanLabel__divSenha {
+  .pip-div__Senha {
     width: 240px;
     height: 35px;
   }
@@ -536,16 +491,16 @@ height: 35px;
     font-size: 20px;
   }
   
-  .divInputSenha {
+  .pip-inp_Senha {
     font-size: 12px;
     height: 28px;
   }
   
-  .divInputSenha::placeholder{
+  .pip-inp_Senha::placeholder{
     font-size: 12px;
   }
   
-  .eyePassword{
+  .pip-img_eyeSenha{
       width: 20px;
   }
 
@@ -557,7 +512,7 @@ height: 35px;
   }
   
 
-.btnLogin{
+.pip-btn_Btnlogin{
 font-family: 'Helvética', sans-serif;
 font-weight: 400;
 font-size: 14px;
@@ -565,34 +520,26 @@ width: 140px;
 height: 40px;
 }
 
-.btnLogin:hover{
+.pip-btn_Btnlogin:hover{
   font-size: 14px;
 }
 
 
 
 /* Nova Conta */
-.divNConta{
+.pip-div_NConta{
     color: var(--font-textcolor);
     padding-bottom: 1.1rem;
 }
 
 /* Nova Conta Entra outras formas */
 
-.labelNConta{
+.pip-label_NConta{
   font-family: 'Helvética', sans-serif;
 }
 
 
-.googleReg{
-  width: 35px;
-}
-
-.facebookReg{
-  width: 35px;
-}
-
-.LinkNAcc{
+.pip-span_NConta{
   color: var(--font-textcolor);
   font-size: 14px;
 }
@@ -614,12 +561,12 @@ height: 40px;
     height: 40px;
   }
 
-  .divInputEmail {
+  .pip-inp_Email {
     font-size: 12px;
     height: 28px;
   }
   
-  .divInputEmail::placeholder{
+  .pip-inp_Email::placeholder{
     font-size: 12px;
   }
   
@@ -627,12 +574,12 @@ height: 40px;
     font-size: 20px;
   }
 
-  .labelSenha {
+  .pip-label_Senha {
     font-weight: 700;
     font-size: 15px;
   }
   
-  .divSpanLabel__divSenha {
+  .pip-div__Senha {
     width: 260px;
     height: 40px;
   }
@@ -642,16 +589,16 @@ height: 40px;
     font-size: 20px;
   }
   
-  .divInputSenha {
+  .pip-inp_Senha {
     font-size: 12px;
     height: 28px;
   }
   
-  .divInputSenha::placeholder{
+  .pip-inp_Senha::placeholder{
     font-size: 12px;
   }
   
-  .eyePassword{
+  .pip-img_eyeSenha{
       width: 20px;
   }
 
@@ -663,7 +610,7 @@ height: 40px;
   }
   
 
-.btnLogin{
+.pip-btn_Btnlogin{
 font-family: 'Helvética', sans-serif;
 font-weight: 400;
 font-size: 14px;
@@ -671,34 +618,25 @@ width: 150px;
 height: 40px;
 }
 
-.btnLogin:hover{
+.pip-btn_Btnlogin:hover{
   font-size: 18px;
 }
 
 
 
 /* Nova Conta */
-.divNConta{
+.pip-div_NConta{
     color: var(--font-textcolor);
     padding-bottom: 1.1rem;
 }
 
 /* Nova Conta Entra outras formas */
 
-.labelNConta{
+.pip-label_NConta{
   font-family: 'Helvética', sans-serif;
 }
 
-
-.googleReg{
-  width: 40px;
-}
-
-.facebookReg{
-  width: 40px;
-}
-
-.LinkNAcc{
+.pip-span_NConta{
   color: var(--font-textcolor);
   font-size: 14px;
 }
@@ -719,12 +657,12 @@ height: 40px;
     height: 40px;
   }
 
-  .divInputEmail {
+  .pip-inp_Email {
     font-size: 12px;
     height: 28px;
   }
   
-  .divInputEmail::placeholder{
+  .pip-inp_Email::placeholder{
     font-size: 12px;
   }
   
@@ -732,12 +670,12 @@ height: 40px;
     font-size: 20px;
   }
 
-  .labelSenha {
+  .pip-label_Senha {
     font-weight: 700;
     font-size: 15px;
   }
   
-  .divSpanLabel__divSenha {
+  .pip-div__Senha {
     width: 290px;
     height: 40px;
   }
@@ -747,16 +685,16 @@ height: 40px;
     font-size: 20px;
   }
   
-  .divInputSenha {
+  .pip-inp_Senha {
     font-size: 12px;
     height: 28px;
   }
   
-  .divInputSenha::placeholder{
+  .pip-inp_Senha::placeholder{
     font-size: 12px;
   }
   
-  .eyePassword{
+  .pip-img_eyeSenha{
       width: 20px;
   }
 
@@ -768,7 +706,7 @@ height: 40px;
   }
   
 
-.btnLogin{
+.pip-btn_Btnlogin{
 font-family: 'Helvética', sans-serif;
 font-weight: 400;
 font-size: 14px;
@@ -776,34 +714,25 @@ width: 150px;
 height: 40px;
 }
 
-.btnLogin:hover{
+.pip-btn_Btnlogin:hover{
   font-size: 18px;
 }
 
 
 
 /* Nova Conta */
-.divNConta{
+.pip-div_NConta{
     color: var(--font-textcolor);
     padding-bottom: 1.1rem;
 }
 
 /* Nova Conta Entra outras formas */
 
-.labelNConta{
+.pip-label_NConta{
   font-family: 'Helvética', sans-serif;
 }
 
-
-.googleReg{
-  width: 40px;
-}
-
-.facebookReg{
-  width: 40px;
-}
-
-.LinkNAcc{
+.pip-span_NConta{
   color: var(--font-textcolor);
   font-size: 14px;
 }

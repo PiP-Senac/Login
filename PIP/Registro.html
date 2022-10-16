@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link style -->
+    <link rel="stylesheet" href="./css/registro.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <title>Registro | PIP</title>
+</head>
+<body>
+    <div class="pip-registro_container">
+        <form
+          action=""
+          name="formLogin"
+          method="post"
+          class="pip-form_container"
+        >
+          <!--|||------------Usuario------------|||-->
+          <div class="pip-div_Email">
+            <label for="inputNick" class="pip-label_Email">
+              <div class="pip-div__Email" id="div_Email">
+                <span class="pip-span_Email"
+                  ><label for="inputNick"><i class="uil uil-at"></i></label
+                ></span>
+                <input
+                  type="text"
+                  placeholder="Email"
+                  id="inputNick"
+                  name="Email"
+                  class="pip-inp_Email"
+                  required
+                  aria-required="true"
+                  autocomplete="off"
+                />
+                <span class="pip-span__Email">Nome de Usúario</span>
+                <!--<span class="divSpanEmail__check"
+                ><i id="iconcheck" class="uil"></i
+              ></span>
+              <i class="uil uil-eye-slash" uil-exclamation-triangle uil-check></i> -->
+              </div>
+            </label>
+          </div>
+          <!--|||------------Email------------|||-->
+          <div class="pip-div_Email">
+            <label for="inputEmail" class="pip-label_Email">
+              <div class="pip-div__Email" id="div_Email">
+                <span class="pip-span_Email"
+                  ><label for="inputEmail"><i class="uil uil-at"></i></label
+                ></span>
+                <input
+                  type="email"
+                  placeholder="Email"
+                  id="inputEmail"
+                  name="Email"
+                  class="pip-inp_Email"
+                  required
+                  aria-required="true"
+                  autocomplete="off"
+                />
+                <span class="pip-span__Email">Email</span>
+                <!--<span class="divSpanEmail__check"
+                ><i id="iconcheck" class="uil"></i
+              ></span>
+              <i class="uil uil-eye-slash" uil-exclamation-triangle uil-check></i> -->
+              </div>
+            </label>
+          </div>
+          
+          <!--|||------------Confirmar Email------------|||-->
+          <div class="pip-div_Email">
+            <label for="inputCEmail" class="pip-label_Email">
+              <div class="pip-div__Email" id="div_Email">
+                <span class="pip-span_Email"
+                  ><label for="inputCEmail"><i class="uil uil-at"></i></label
+                ></span>
+                <input
+                  type="email"
+                  placeholder="Email"
+                  id="inputCEmail"
+                  name="Email"
+                  class="pip-inp_Email"
+                  required
+                  aria-required="true"
+                  autocomplete="off"
+                />
+                <span class="pip-span__Email">Confirmar Email</span>
+                <!--<span class="divSpanEmail__check"
+                ><i id="iconcheck" class="uil"></i
+              ></span>
+              <i class="uil uil-eye-slash" uil-exclamation-triangle uil-check></i> -->
+              </div>
+            </label>
+          </div>
+          
+          <!--|||------------Senha------------|||--> 
+          <div class="pip-div_Senha">
+            <label for="inputSenha" class="pip-label_Senha">
+              <div class="pip-div__Senha">
+                <span class="pip-span_Senha"
+                  ><label for="inputSenha"
+                    ><i class="uil uil-key-skeleton-alt"></i></label
+                ></span>
+                <input
+                  type="password"
+                  placeholder="Senha"
+                  class="pip-inp_Senha"
+                  name="Senha"
+                  minlength="8"
+                  required
+                  aria-required="true"
+                  id="inputSenha"
+                />
+                <span class="pip-span__Senha">Senha</span>
+                <span class="pip-span_eyeSenha"
+                  ><img
+                    src="./img/olho.svg"
+                    class="pip-img_eyeSenha"
+                    id="olho"
+                    alt="Senha"
+                /></span>
+              </div>
+            </label>
+          </div>
+
+          <!--|||------------Confirmar Senha------------|||-->
+          <div class="pip-div_Senha">
+            <label for="inputCSenha" class="pip-label_Senha">
+              <div class="pip-div__Senha">
+                <span class="pip-span_Senha"
+                  ><label for="inputCSenha"
+                    ><i class="uil uil-key-skeleton-alt"></i></label
+                ></span>
+                <input
+                  type="password"
+                  placeholder="Senha"
+                  class="pip-inp_Senha"
+                  name="Senha"
+                  minlength="8"
+                  required
+                  aria-required="true"
+                  id="inputCSenha"
+                />
+                <span class="pip-span__Senha">Confirmar Senha</span>
+                <span class="pip-span_eyeSenha"
+                  ><img
+                    src="img/olho.svg"
+                    class="pip-img_eyeSenha"
+                    id="olho"
+                    alt="Senha"
+                /></span>
+              </div>
+            </label>
+          </div>
+  
+          <!--|||------------Data de Nascimento ------------|||-->
+            <div class="pip-div_Date">
+                <label for="InpDate" class="pip-label_Date">
+                    <input type="date" name="" class="pip-inp_Date" id="InpDate">
+                </label>
+            </div>
+
+          <!--|||------------CheckBox ------------|||-->
+          <div class="pip-div_Checkbox">
+            <label class="pip-label_Checkbox">
+              <input type="checkbox" name="checkbox" class="pip-inp_Checkbox" />
+              <span class="pip-span_Checkbox">Termos de Condição</span>
+            </label>
+          </div>
+  
+          <!--|||------------Button------------|||-->
+          <div class="pip-div_Btnlogin">
+            <button type="submit" class="pip-btn_Btnlogin">Criar Conta</button>
+          </div>
+  
+          <!--|||----------Ja tenho Uma Conta----------|||-->
+          <div class="pip-div_NConta">
+            <label for="linkRegistro" class="pip-label_NConta">
+              <a name="linkRegistro" class="pip-a_NConta" href="Registro.html"
+                ><span class="pip-span_NConta">Já Tenho Uma Conta</span>
+              </a>
+            </label>
+          </div>
+  
+        </form>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="./js/Login.js"></script>
+    
+</body>
+</html>

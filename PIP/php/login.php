@@ -13,7 +13,7 @@ if(isset($_POST['Email']) || isset($_POST['Senha'])) {
         $email = $mysqli->real_escape_string($_POST['Email']);
         $senha = $mysqli->real_escape_string($_POST['Senha']);
 
-        $sql_code = "SELECT * FROM loginreceiver WHERE email = '$email' AND senha = '$senha'";
+        $sql_code = "SELECT * FROM reg_login WHERE email = '$email' AND senha = '$senha'";
         $sql_query = $mysqli->query($sql_code) or die("Falha na execução do código SQL: " . $mysqli->error);
 
         $quantidade = $sql_query->num_rows;

@@ -8,7 +8,7 @@
     <link rel="apple-touch-icon" sizes="57x57" href="">
     <link rel="apple-touch-icon" sizes="60x60" href="">
     <link rel="apple-touch-icon" sizes="72x72" href="">
-    <link rel="apple-touch-icon" sizes="76x76" href="">
+    <link rel="apple-touch-icon" sizes="76x76" href="">             
     <link rel="apple-touch-icon" sizes="114x114" href="">
     <link rel="apple-touch-icon" sizes="120x120" href="">
     <link rel="apple-touch-icon" sizes="144x144" href="">
@@ -20,7 +20,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href=""> -->
 
     <!-- link css -->
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/Login.css" />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link
       rel="stylesheet"
@@ -34,96 +34,104 @@
   </head>
 
   <body>
-    <div class="Login">
+    <div class="pip-login_container">
       <form
         action="./php/login.php"
         name="formLogin"
         method="post"
-        class="formLogin"
+        class="pip-form_container"
       >
         <!--|||------------Email------------|||-->
-        <div class="fieldEmail">
-          <label for="inputEmail" class="fieldEmail labelEmail">
-          <div class="divSpanLabel__div" id="div_Email">
-            <span class="divSpanEmail"
-              ><label for="inputEmail"><i class="uil uil-at"></i></label
-            ></span>
-            <input
-              type="email"
-              placeholder="Email"
-              id="inputEmail"
-              name="Email"
-              class="divInputEmail"
-              required
-              aria-required="true"
-              autocomplete="off"
-            />
-            <span class="divSpan_email">Email</span>
-            <span class="divSpanEmail__check"
+        <div class="pip-div_Email">
+          <label for="inputEmail" class="pip-label_Email">
+            <div class="pip-div__Email" id="div_Email">
+              <span class="pip-span_Email"
+                ><label for="inputEmail"><i class="uil uil-at"></i></label
+              ></span>
+              <input
+                type="email"
+                placeholder="Email"
+                id="inputEmail"
+                name="Email"
+                class="pip-inp_Email"
+                required
+                aria-required="true"
+                autocomplete="off"
+              />
+              <span class="pip-span__Email">Email</span>
+              <!--<span class="divSpanEmail__check"
               ><i id="iconcheck" class="uil"></i
             ></span>
-            <!-- <i class="uil uil-eye-slash" uil-exclamation-triangle uil-check></i> -->
-          </div>
-        </label>
+            <i class="uil uil-eye-slash" uil-exclamation-triangle uil-check></i> -->
+            </div>
+          </label>
         </div>
 
         <!--|||------------Senha------------|||-->
-        <div class="fieldSenha">
-          <label for="inputSenha" class="fieldSenha labelSenha">
-          <div class="divSpanLabel__divSenha">
-            <span class="divSpanSenha"
-              ><label for="inputSenha"
-                ><i class="uil uil-key-skeleton-alt"></i></label
-            ></span>
-            <input
-              type="password"
-              placeholder="Senha"
-              class="divInputSenha"
-              name="Senha"
-              minlength="8"
-              required
-              aria-required="true"
-              id="inputSenha"
-            />
-            <span class="divSpan_senha">Senha</span>
-            <span class="divSpanSenha__eye"
-              ><img
-                src="img/olhos-cruzados.svg"
-                class="eyePassword"
-                id="olho"
-                alt="Senha"
-            /></span>
-          </div>
-        </label>
+        <div class="pip-div_Senha">
+          <label for="inputSenha" class="pip-label_Senha">
+            <div class="pip-div__Senha">
+              <span class="pip-span_Senha"
+                ><label for="inputSenha"
+                  ><i class="uil uil-key-skeleton-alt"></i></label
+              ></span>
+              <input
+                type="password"
+                placeholder="Senha"
+                class="pip-inp_Senha"
+                name="Senha"
+                minlength="8"
+                required
+                aria-required="true"
+                id="inputSenha"
+              />
+              <span class="pip-span__Senha">Senha</span>
+              <span class="pip-span_eyeSenha"
+                ><img
+                  src="img/olhos-cruzados.svg"
+                  class="pip-img_eyeSenha"
+                  id="olho"
+                  alt="Senha"
+              /></span>
+            </div>
+          </label>
         </div>
 
         <!--|||------------CheckBox & Senha ------------|||-->
-        <div class="div_RCheckBox">
-          <label class="label_Checkbox">
-            <input type="checkbox" name="checkbox" class="cnf_Checkbox" />
-            <span class="checkboxText_L">Lembrar-me</span>
+        <div class="pip-div_Checkbox">
+          <label class="pip-label_Checkbox">
+            <input type="checkbox" name="checkbox" class="pip-inp_Checkbox" />
+            <span class="pip-span_Checkbox">Lembrar-me</span>
           </label>
-          <label for="linkRSenha" class="labelRSenha">
-            <a name="linkRSenha" href="RecuperarSenha.html" class="linkRSenha"
-              ><span class="checkboxText">Esqueceu a Senha?</span></a
+          <label for="linkRSenha" class="pip-label_ESenha">
+            <a name="linkRSenha" href="RecuperarSenha.html" class="pip-a_ESenha"
+              ><span class="pip-span_ESenha">Esqueceu a Senha?</span></a
             >
           </label>
         </div>
 
         <!--|||------------Button------------|||-->
-        <div class="divBtn">
-          <button type="submit" class="btnLogin">Entrar</button>
+        <div class="pip-div_Btnlogin">
+          <button type="submit" class="pip-btn_Btnlogin">Entrar</button>
         </div>
 
         <!--|||----------Nova-Conta----------|||-->
-        <div class="divNConta">
-          <label for="linkRegistro" class="labelNConta">
-            <a name="linkRegistro" class="linkNConta" href="Registro.html"
-              ><span class="LinkNAcc">Ainda não tenho uma Conta</span></a
-            >
+        <div class="pip-div_NConta">
+          <label for="linkRegistro" class="pip-label_NConta">
+            <a name="linkRegistro" class="pip-a_NConta" href="Registro.html"
+              ><span class="pip-span_NConta">Ainda não tenho uma Conta</span>
+            </a>
           </label>
         </div>
-   <!--  
+
+      </form>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/Login.js"></script>
+  </body>
+</html>
+
+        <!--  
         <div class="divANConta_icon">
           <label for="" class="labelNConta_icon">
             <div class="divNConta_linkGoogle">
@@ -145,12 +153,3 @@
           </label>
         </div>
 -->
-        
-      </form>
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="./js/Login.js"></script>
-    <script type="text/javascript" src="../vendors/scrolloverflow.js"></script>
-    <script type="text/javascript" src="../jquery.fullPage.js"></script>
-  </body>
-</html>

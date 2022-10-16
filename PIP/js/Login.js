@@ -1,27 +1,30 @@
 /* Mostrar Senha */
-let btn = document.querySelector('#olho');
 
-btn.addEventListener('click', function() {
-    let input = document.querySelector('#inputSenha');
-
-    if(input.getAttribute('type') == 'password') {
-        input.setAttribute('type', 'text');
+let btn = document.querySelectorAll('#olho');
+for(i = 0 ;i < btn.length;i++){
+btn[i].addEventListener('click', function() {
+  let input = document.querySelectorAll('.pip-inp_Senha');
+  for(i = 0 ;i < input.length;i++){
+  if(input[i].getAttribute('type') == 'password') {
+        input[i].setAttribute('type', 'text');
     } else {
-        input.setAttribute('type', 'password');
+        input[i].setAttribute('type', 'password');
     }
-
-});
+  }
+    });
+}
 
 $(document).ready(function(){
-
-    $("#olho").click(function(){
-      if($(this).attr("src") == "img/olhos-cruzados.svg")
-      $(this).attr("src","img/olho.svg");
+  for(i=0;i<btn.length;i++){
+    $(btn[i]).click(function(){
+      if($(btn).attr("src") == "img/olho.svg")
+      $(btn).attr("src","img/olhos-cruzados.svg");
       else
-        $(this).attr("src","img/olhos-cruzados.svg");
-  
+        $(btn).attr("src","img/olho.svg");
     });
-  });
+  }
+})
+
 
      // Input Senha 
     $('#inputSenha').on('focus change', function() {
@@ -45,15 +48,15 @@ $(document).ready(function(){
 /* Email */  
         function valid(element) {
           $(element)
-            .closest('.divSpanLabel__div')
+            .closest('.pip-div__Email')
             .removeClass('error')
-            .addClass('success');
+            .addClass('sucess');
         }
         
         function notValid(element) {
           $(element)
-            .closest('.divSpanLabel__div')
-            .removeClass('success')
+            .closest('.pip-div__Email')
+            .removeClass('sucess')
             .addClass('error');
         }
         
