@@ -18,7 +18,7 @@ $(document).ready(function(){
   for(i=0;i<btn.length;i++){
     $(btn[i]).click(function(){
       if($(btn).attr("src") == "img/olho.svg")
-      $(btn).attr("src","img/olhos-cruzados.svg");
+      $(btn).attr("src","img/olho-cruzados.svg");
       else
         $(btn).attr("src","img/olho.svg");
     });
@@ -27,37 +27,51 @@ $(document).ready(function(){
 
 
      // Input Senha 
-    $('#inputSenha').on('focus change', function() {
-      if (! $(this).val() || $(this).val().length === 0) {
-        return notValid($(this));
-      }
-      
-      valid($(this));
-    });
+var pasw = document.querySelector(".pip-inp_Senha");
+var form = document.querySelector(".pip-form_container");
+var test = document.querySelector(".test");
+
+    
+pasw.addEventListener('keyup',function(){
+  if(pasw.length <= 8){
+  
+}
+
+})
 
     $(document).ready(function(){
-      $("#inputSenha").focus(function() {
-        $(this).parent().addClass("focoAtual")
+      $(pasw).focus(function() {
+        $(this).parent().addClass("pip-div__Senha--focus")
       });
-      $("#inputSenha").blur(function() {
-        $(this).parent().removeClass("focoAtual")
+      $(pasw).blur(function() {
+        $(this).parent().removeClass("pip-div__Senha--focus")
       });
     });
+
+    function valid(element) {
+      $(element)
+        .closest('.pip-div__Senha')
+        .removeClass('pip-div__Email--error')
+    }
+    
+    function notValid(element) {
+      $(element)
+        .closest('.pip-div__Senha')
+        .addClass('pip-div__Email--error');
+    }
 
 
 /* Email */  
         function valid(element) {
           $(element)
             .closest('.pip-div__Email')
-            .removeClass('error')
-            .addClass('sucess');
+            .removeClass('pip-div__Email--error')
         }
         
         function notValid(element) {
           $(element)
             .closest('.pip-div__Email')
-            .removeClass('sucess')
-            .addClass('error');
+            .addClass('pip-div__Email--error');
         }
         
         

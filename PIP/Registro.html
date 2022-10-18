@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- link style -->
-    <link rel="stylesheet" href="./css/registro.css">
+    <link rel="stylesheet" href="./css/Registro.css">
     <link rel="stylesheet" href="./css/normalize.css">
     <link
       rel="stylesheet"
@@ -158,10 +158,18 @@
             </label>
           </div>
   
+          <!--|||------------Senha Validação ------------|||-->
+          <div class="test">
+            <span class="val-span val-lw"><img src="./img/error.svg" class="val-icons" alt="verificação">Letras Minusculas </span>
+            <span class="val-span val-up"><img src="./img/error.svg" class="val-icons" alt="verificação">Letras Maiusculas </span>
+            <span class="val-span val-number"><img src="./img/error.svg" class="val-icons" alt="verificação">Numeros </span>
+            <span class="val-span val-spc"><img src="./img/error.svg" class="val-icons" alt="verificação">Pelo Menos um caractere especial</span>
+            <span class="val-span val-len"><img src="./img/error.svg" class="val-icons" alt="verificação">Senha Maior</span>
+          </div>
           <!--|||------------Data de Nascimento ------------|||-->
             <div class="pip-div_Date">
                 <label for="InpDate" class="pip-label_Date">
-                    <input type="date" name="" class="pip-inp_Date" id="InpDate">
+                    <input type="date" name="Date" class="pip-inp_Date" placeholder="data" id="InpDate">
                 </label>
             </div>
 
@@ -181,16 +189,17 @@
           <!--|||----------Ja tenho Uma Conta----------|||-->
           <div class="pip-div_NConta">
             <label for="linkRegistro" class="pip-label_NConta">
-              <a name="linkRegistro" class="pip-a_NConta" href="Registro.html"
+              <a name="linkRegistro" class="pip-a_NConta" href="Login.html"
                 ><span class="pip-span_NConta">Já Tenho Uma Conta</span>
               </a>
             </label>
           </div>
-  
+          <h3 id="result"></h3>
         </form>
       </div>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-      <script src="./js/Login.js"></script>
+      <script src="./js/Registro.js"></script>
     
+   
 </body>
 </html>

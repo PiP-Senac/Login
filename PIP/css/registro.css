@@ -14,8 +14,42 @@ body {
   background-color: var(--background-image);
 }
 
+.test{
+  display: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: .3rem 0rem;
+}
 
-div.error{
+.val-icons{
+  width: 16px;
+  padding-right: .3rem;
+}
+
+.val-span{
+display: flex;
+align-items: center;
+padding: .1rem 0rem;
+font-size: 13px;
+opacity: 60%;
+}
+
+.valid{
+  opacity: 100%;
+}
+
+.val-span>.val-icons{
+    filter: invert(53%) sepia(44%) saturate(4753%) hue-rotate(327deg) brightness(101%) contrast(90%);
+}
+
+.valid>.val-icons{
+filter: invert(81%) sepia(36%) saturate(962%) hue-rotate(59deg) brightness(94%) contrast(87%);
+}
+.invalid{
+
+}
+
+div.error, .error > .pip-div__Email--focus{
   border-color: #e57f7f;
 }
 
@@ -25,6 +59,14 @@ div.sucess{
 
 div.focoAtual{
   border-color: rgb(61, 61, 61);
+}
+
+div.pip-div__Senha--focus{
+  border-color: black;
+}
+
+div.pip-div__Email--focus{
+  border-color: black;
 }
 
 .pip-registro_container {
@@ -72,7 +114,6 @@ div.focoAtual{
 }
 
 .pip-div__Email:hover {
-  border-color: rgb(150, 150, 150);
   box-shadow: 0px 1px 2px rgba(172, 172, 172, 0.75);
   }
 
@@ -144,13 +185,6 @@ div.focoAtual{
   align-self: center;
   background-color: rgb(255, 255, 255);
 }
-
-.pip-inp_Email::placeholder{
-  font-size: 14px;
-  font-family: 'Helvética', sans-serif;
-  font-weight: 400;
-}
-
 .pip-span_Email {
   display: flex;
   align-self: center;
@@ -189,7 +223,6 @@ div.focoAtual{
 }
 
 .pip-div__Senha:hover {
-border-color: rgb(150, 150, 150);
 box-shadow: 0px 1px 2px rgba(172, 172, 172, 0.75);
 }
 
@@ -200,12 +233,6 @@ box-shadow: 0px 1px 2px rgba(172, 172, 172, 0.75);
   height: 30px;
   align-self: center;
   background-color: rgb(255, 255, 255);
-  font-size: 14px;
-  font-family: 'Helvética', sans-serif;
-  font-weight: 400;
-}
-
-.pip-inp_Senha::placeholder{
   font-size: 14px;
   font-family: 'Helvética', sans-serif;
   font-weight: 400;
@@ -270,10 +297,6 @@ height: .9rem;
 
 .pip-div_Date{
 margin-bottom:.8rem;
-}
-
-.pip-label_Date{
-
 }
 
 .pip-inp_Date{
