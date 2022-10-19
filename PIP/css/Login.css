@@ -5,8 +5,11 @@
 --background-image: #B48DFA;
 --form-bgcolor:white;
 --font-textcolor:black;
---bgbutton: #3030ff;
+--bgbutton: #B48DFA;
 --bgshadow:0 4px 15px 0 #4949FF;
+--font-linkcolor:#4169E1;
+--font-padrao: 'Helvética', sans-serif;
+--color-label:#B48DFA;
 }
 
 body {
@@ -24,23 +27,47 @@ div.sucess{
 }
 
 div.focoAtual{
-  border-color: rgb(61, 61, 61);
+  border-color:var(--color-label);
 }
 
 div.pip-div__Senha--focus{
-  border-color: black;
+  border-color:var(--color-label);
 }
 
 
 
 /*  */
+
 .pip-login_container {
   width: 100vw;
   height: 100vh;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.pip-div_logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+ 
+}
+.pip-span_logo{
+  font-family: 'Libre Baskerville';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  color: #FFFFFF;
+}
+ .pip-img_logo{
+  position: relative;
+  right:3rem;
+  width: 170px;
+  height: 170px;
+  
 }
 
 .pip-form_container{
@@ -58,7 +85,7 @@ div.pip-div__Senha--focus{
 
 .pip-label_Email {
   padding-bottom: 12px;
-  font-family: 'Helvética', sans-serif;
+  font-family:var(--font-padrao);
   font-weight: 600;
   font-size: 15px;
   color: var(--font-textcolor);
@@ -71,7 +98,8 @@ div.pip-div__Senha--focus{
   height: 40px;
   background-color: rgb(255, 255, 255);
   margin-top: 4px;
-  border: 1px solid rgb(211 211 211);
+  border: 1px solid #B48DFA
+  ;
   border-radius: 3px;
 }
 .pip-div__Email .pip-inp_Email{
@@ -187,7 +215,7 @@ div.pip-div__Senha--focus{
   display: flex;
   position: relative;
   width: 330px;
-  border: 1px solid rgb(211 211 211);
+  border: 1px solid  #B48DFA;
   border-radius: 3px;
   height: 40px;
   background-color: rgb(255, 255, 255);
@@ -259,7 +287,7 @@ padding-left: 0.3rem;
 }
 
 .pip-span_ESenha{
-  color: var(--font-textcolor);
+  color: var(--font-linkcolor);
 }
 
 .pip-span_ESenha:hover{
@@ -271,6 +299,9 @@ background-color: gray;
 border-radius: 2px;
 width: .9rem;
 height: .9rem;
+}
+.g-recaptcha{
+  border-radius: 2px;
 }
 
 /* Button */
@@ -310,7 +341,7 @@ opacity: 80%;
 }
 
 .pip-span_NConta{
-  color: var(--font-textcolor);
+  color: var(--font-linkcolor);
   font-size: 16px;
 }
 
@@ -327,423 +358,9 @@ opacity: 80%;
 /* Media Query */
 
 /* Mobile S - min width */
-@media only screen and (min-device-width: 320px) and (max-device-width:374px) {
-  .formLogin{
-    padding: 2rem;
-  }
-  
-  .labelEmail {
-    font-weight: 700;
-    font-size: 14px;
-  }
-  
-  .divSpanLabel__div {
-    width: 235px;
-    height: 30px;
-  }
+@media only screen and (min-device-width: 425px) {}
+@media only screen and (max-device-width: 768px) {}
+@media only screen and (max-device-width: 1440px) {}
 
-  .pip-inp_Email {
-    font-size: 12px;
-    height: 28px;
-  }
-  
-  .pip-inp_Email::placeholder{
-    font-size: 12px;
-  }
-  
-  .uil-at{
-    font-size: 20px;
-  }
-
-  .pip-label_Senha {
-    font-weight: 700;
-    font-size: 14px;
-  }
-  
-  .pip-div__Senha {
-  width: 235px;
-  height: 30px;
-  }
-  
-  
-  .uil-key-skeleton-alt {
-    font-size: 20px;
-  }
-  
-  .pip-inp_Senha {
-    font-size: 12px;
-    height: 28px;
-  }
-  
-  .pip-inp_Senha::placeholder{
-    font-size: 12px;
-  }
-  
-  .pip-img_eyeSenha{
-      width: 20px;
-  }
-
-  .div_RCheckBox{
-    width: 100%;
-    font-family: 'Helvética', sans-serif;
-    font-size: 12px;
-    color: var(--font-textcolor);
-  }
-  
-
-.pip-btn_Btnlogin{
-font-family: 'Helvética', sans-serif;
-font-weight: 400;
-font-size: 12px;
-width: 130px;
-height: 35px;
-}
-
-.pip-btn_Btnlogin:hover{
-  font-size: 15px;
-}
-
-
-
-/* Nova Conta */
-.pip-div_NConta{
-    color: var(--font-textcolor);
-    padding-bottom: 12px;
-}
-
-/* Nova Conta Entra outras formas */
-
-.pip-label_NConta{
-  font-family: 'Helvética', sans-serif;
-}
-
-
-.divNConta_linkGoogle{
-  margin-right: 26px;
-  
-}
-
-.pip-span_NConta{
-  color: var(--font-textcolor);
-  font-size: 14px;
-}
-
-}
-
-
-
-@media only screen and (min-device-width: 375px) and (max-device-width: 424px) {
-  .formLogin{
-    padding: 3rem;
-  }
-  
-  .labelEmail {
-    font-weight: 700;
-    font-size: 14px;
-  }
-  
-  .divSpanLabel__div {
-    width: 240px;
-    height: 35px;
-  }
-
-  .pip-inp_Email {
-    font-size: 12px;
-    height: 28px;
-  }
-  
-  .pip-inp_Email::placeholder{
-    font-size: 12px;
-  }
-  
-  .uil-at{
-    font-size: 20px;
-  }
-
-  .pip-label_Senha {
-    font-weight: 700;
-    font-size: 14px;
-  }
-  
-  .pip-div__Senha {
-    width: 240px;
-    height: 35px;
-  }
-  
-  
-  .uil-key-skeleton-alt {
-    font-size: 20px;
-  }
-  
-  .pip-inp_Senha {
-    font-size: 12px;
-    height: 28px;
-  }
-  
-  .pip-inp_Senha::placeholder{
-    font-size: 12px;
-  }
-  
-  .pip-img_eyeSenha{
-      width: 20px;
-  }
-
-  .div_RCheckBox{
-    width: 100%;
-    font-family: 'Helvética', sans-serif;
-    font-size: 12px;
-    color: var(--font-textcolor);
-  }
-  
-
-.pip-btn_Btnlogin{
-font-family: 'Helvética', sans-serif;
-font-weight: 400;
-font-size: 14px;
-width: 140px;
-height: 40px;
-}
-
-.pip-btn_Btnlogin:hover{
-  font-size: 14px;
-}
-
-
-
-/* Nova Conta */
-.pip-div_NConta{
-    color: var(--font-textcolor);
-    padding-bottom: 1.1rem;
-}
-
-/* Nova Conta Entra outras formas */
-
-.pip-label_NConta{
-  font-family: 'Helvética', sans-serif;
-}
-
-
-.pip-span_NConta{
-  color: var(--font-textcolor);
-  font-size: 14px;
-}
-}
-
-
-@media only screen and (min-device-width: 425px) and (max-device-width: 496px) {
-  .formLogin{
-    padding: 4rem;
-  }
-  
-  .labelEmail {
-    font-weight: 700;
-    font-size: 15px;
-  }
-  
-  .divSpanLabel__div {
-    width: 260px;
-    height: 40px;
-  }
-
-  .pip-inp_Email {
-    font-size: 12px;
-    height: 28px;
-  }
-  
-  .pip-inp_Email::placeholder{
-    font-size: 12px;
-  }
-  
-  .uil-at{
-    font-size: 20px;
-  }
-
-  .pip-label_Senha {
-    font-weight: 700;
-    font-size: 15px;
-  }
-  
-  .pip-div__Senha {
-    width: 260px;
-    height: 40px;
-  }
-  
-  
-  .uil-key-skeleton-alt {
-    font-size: 20px;
-  }
-  
-  .pip-inp_Senha {
-    font-size: 12px;
-    height: 28px;
-  }
-  
-  .pip-inp_Senha::placeholder{
-    font-size: 12px;
-  }
-  
-  .pip-img_eyeSenha{
-      width: 20px;
-  }
-
-  .div_RCheckBox{
-    width: 100%;
-    font-family: 'Helvética', sans-serif;
-    font-size: 12px;
-    color: var(--font-textcolor);
-  }
-  
-
-.pip-btn_Btnlogin{
-font-family: 'Helvética', sans-serif;
-font-weight: 400;
-font-size: 14px;
-width: 150px;
-height: 40px;
-}
-
-.pip-btn_Btnlogin:hover{
-  font-size: 18px;
-}
-
-
-
-/* Nova Conta */
-.pip-div_NConta{
-    color: var(--font-textcolor);
-    padding-bottom: 1.1rem;
-}
-
-/* Nova Conta Entra outras formas */
-
-.pip-label_NConta{
-  font-family: 'Helvética', sans-serif;
-}
-
-.pip-span_NConta{
-  color: var(--font-textcolor);
-  font-size: 14px;
-}
-}
-
-@media only screen and (min-device-width: 497px) and (max-device-width: 767px) {
-  .formLogin{
-    padding: 4rem;
-  }
-  
-  .labelEmail {
-    font-weight: 700;
-    font-size: 15px;
-  }
-  
-  .divSpanLabel__div {
-    width: 290px;
-    height: 40px;
-  }
-
-  .pip-inp_Email {
-    font-size: 12px;
-    height: 28px;
-  }
-  
-  .pip-inp_Email::placeholder{
-    font-size: 12px;
-  }
-  
-  .uil-at{
-    font-size: 20px;
-  }
-
-  .pip-label_Senha {
-    font-weight: 700;
-    font-size: 15px;
-  }
-  
-  .pip-div__Senha {
-    width: 290px;
-    height: 40px;
-  }
-  
-  
-  .uil-key-skeleton-alt {
-    font-size: 20px;
-  }
-  
-  .pip-inp_Senha {
-    font-size: 12px;
-    height: 28px;
-  }
-  
-  .pip-inp_Senha::placeholder{
-    font-size: 12px;
-  }
-  
-  .pip-img_eyeSenha{
-      width: 20px;
-  }
-
-  .div_RCheckBox{
-    width: 100%;
-    font-family: 'Helvética', sans-serif;
-    font-size: 13px;
-    color: var(--font-textcolor);
-  }
-  
-
-.pip-btn_Btnlogin{
-font-family: 'Helvética', sans-serif;
-font-weight: 400;
-font-size: 14px;
-width: 150px;
-height: 40px;
-}
-
-.pip-btn_Btnlogin:hover{
-  font-size: 18px;
-}
-
-
-
-/* Nova Conta */
-.pip-div_NConta{
-    color: var(--font-textcolor);
-    padding-bottom: 1.1rem;
-}
-
-/* Nova Conta Entra outras formas */
-
-.pip-label_NConta{
-  font-family: 'Helvética', sans-serif;
-}
-
-.pip-span_NConta{
-  color: var(--font-textcolor);
-  font-size: 14px;
-}
-}
-
-@media only screen and (max-device-width: 768px) {
-  .text {
-    font-size: 16px;
-  }
-}
-
-@media only screen and (max-device-width: 1024px) {
-  .text {
-    font-size: 16px;
-  }
-}
-
-@media only screen and (max-device-width: 1440px) {
-  .text {
-    font-size: 16px;
-  }
-}
-
-@media only screen and (max-device-width: 2560px) {
-  .text {
-    font-size: 16px;
-  }
-}
 
 

@@ -348,7 +348,7 @@ template {
 }
 
 
-input[type=email], input[type=password] {
+input[type=email], input[type=password], input[type=text] {
   outline: none
 }
 
