@@ -49,7 +49,7 @@ filter: invert(81%) sepia(36%) saturate(962%) hue-rotate(59deg) brightness(94%) 
 
 }
 
-div.error, .error > .pip-div__Email--focus{
+div.error{
   border-color: #e57f7f;
 }
 

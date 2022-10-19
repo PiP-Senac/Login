@@ -5,46 +5,42 @@ var divEmail = document.querySelectorAll(".pip-div__Email");
 var inpEmail = document.querySelector("#inputEmail");
 var inpCEmail = document.querySelector("#inputCEmail");
 
-
-const validateEmail = (email) => {
-  return String(email)
-    .toLowerCase()
-    .match(
-      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-    );
-};
-
-const validate = () => {
-  const $result = $('.pip-div__Email');
-  const email = $('#inputEmail').val();
-
-
-  if (validateEmail(email)) { //email valido 
-    $result.addClass("sucess");
-    $result.removeClass("error");
-  } else { //email invalido
-    $result.addClass("error");
-    $result.removeClass("sucess");
-  }
-
+function ValidateEmail()
+{
+  var mailformat=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  if(inpEmail.value.match(mailformat)){
+  divEmail[1].classList.remove("error");
+  divEmail[1].classList.add("sucess");
+  return true;
+}
+else
+{
+  divEmail[1].classList.add("error");
+  divEmail[1].classList.remove("sucess");
   return false;
 }
-$('#inputEmail').on('input', validate);
+
+}
+
+$('#inputEmail').on('input', ValidateEmail);
+
+
 
 
 //Confirmar Email == Email
-function validarSenha() {
+function validarCEmail() {
   if (inpEmail.value != inpCEmail.value) {
-    inpCEmail.setCustomValidity("Emails Diferentes");
-    inpCEmail.reportValidity();
+    divEmail[2].classList.add("error");
+    divEmail[2].classList.remove("sucess");
     return false;
   } else {
-    inpCEmail.setCustomValidity("");
+    divEmail[2].classList.add("sucess");
+    divEmail[2].classList.remove("error");
     return true;
   }
 }
 
-inpCEmail.addEventListener('input', validarSenha);
+inpCEmail.addEventListener('input', validarCEmail);
 
 // Border Effect
 var inputE = document.querySelectorAll(".pip-inp_Email");
@@ -93,9 +89,11 @@ $(document).ready(function(){
 })
 
 /* Validação Senha */
+var divSenha = document.querySelectorAll("pip")
 var form = document.querySelector(".pip-form_container");
 var test = document.querySelector(".test");
 var inpSenha = document.querySelector("#inputSenha");
+var inpCSenha = document.querySelector("#inputCSenha");
 var valSpan = document.querySelectorAll(".val-span");
 var valIcon = document.querySelectorAll(".val-icons");
 
@@ -172,6 +170,21 @@ if($(valSpan[i]).hasClass("valid")){
 }
 
 });
+// Senha == Confirmar Senha
+
+function validarCSenha() {
+  if (inpSenha.value != inpCSenha.value) {
+    inpCSenha.classList.add("error");
+    inpCSenha.classList.remove("sucess");
+    return false;
+  } else {
+    inpCSenha.classList.add("sucess");
+    inpCSenha.classList.remove("error");
+    return true;
+  }
+}
+
+inpCSenha.addEventListener('input', validarCSenha);
 
 // Border Effect 
 
