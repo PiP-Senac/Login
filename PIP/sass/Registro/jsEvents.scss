@@ -1,0 +1,58 @@
+@import "./Variaveis.scss";
+.test {
+    display: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 0.3rem 0rem;
+  }
+  
+  .val-icons {
+    width: 16px;
+    padding-right: 0.3rem;
+  }
+  
+  .val-span {
+    display: flex;
+    align-items: center;
+    padding: 0.1rem 0rem;
+    font-size: 13px;
+    opacity: 60%;
+  }
+  
+  .valid {
+    opacity: 100%;
+  }
+  
+  .val-span > .val-icons {
+    filter: invert(53%) sepia(44%) saturate(4753%) hue-rotate(327deg)
+      brightness(101%) contrast(90%);
+  }
+  
+  .valid > .val-icons {
+    filter: invert(81%) sepia(36%) saturate(962%) hue-rotate(59deg)
+      brightness(94%) contrast(87%);
+  }
+  .invalid {
+    filter: invert(53%) sepia(44%) saturate(4753%) hue-rotate(327deg)
+      brightness(101%) contrast(90%);
+  }
+  
+  div.error {
+    border-color: #e57f7f;
+  }
+  
+  div.sucess {
+    border-color: #8dde8d;
+  }
+  
+  div.focoAtual {
+    border-color: $focus;
+  }
+  
+  div.pip-div__Senha--focus {
+    border-color:$focus;
+  }
+  
+  div.pip-div__Email--focus {
+    border-color:$focus;
+  }
