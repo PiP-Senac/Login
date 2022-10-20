@@ -1,20 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap");
-/*font-family: 'Open Sans', sans-serif;*/
 :root {
-  --background-image: #B48DFA;
+  --background-image: #8E4DFB;
   --form-bgcolor:white;
   --font-textcolor:black;
-  --bgbutton: #B48DFA;
-  --bgshadow:0 4px 15px 0 #4949FF;
-  --font-linkcolor:#4169E1;
+  --bgbutton: #8E4DFB;
+  --bgshadow:0 4px 15px 0 #8E4DFB;
+  --font-linkcolor:#8E4DFB;
   --font-padrao: 'Helvética', sans-serif;
-  --color-label:#B48DFA;
+  --color-label:#8E4DFB;
 }
 
 body {
   overflow-y: hidden;
   background-color: var(--background-image);
+  color: var(--font-textcolor);
+  font-family: var(--font-padrao);
 }
 
 .test {
@@ -73,6 +72,7 @@ div.pip-div__Email--focus {
   border-color:var(--color-label);
 }
 
+/* div */
 .pip-registro_container {
   width: 100vw;
   height: 100vh;
@@ -82,6 +82,7 @@ div.pip-div__Email--focus {
   align-items: center;
 }
 
+/* form */
 .pip-form_container {
   display: flex;
   flex-direction: column;
@@ -91,16 +92,15 @@ div.pip-div__Email--focus {
   border-radius: 10px;
 }
 
+/* Login inp Format */
 .pip-div_login {
   padding-bottom: 12px;
 }
 
 .pip-label_login {
   padding-bottom: 12px;
-  font-family: "Helvética", sans-serif;
   font-weight: 600;
   font-size: 15px;
-  color: var(--font-textcolor);
 }
 
 .pip-div__login {
@@ -131,7 +131,6 @@ div.pip-div__Email--focus {
   top: 11px;
   left: 2.5rem;
   font-size: 14px;
-  font-family: "Helvética", sans-serif;
   font-weight: 400;
   background-color: white;
   color: #797575;
@@ -142,13 +141,11 @@ div.pip-div__Email--focus {
 .pip-inp_login:focus + .pip-span__login,
 .pip-inp_login:not(:placeholder-shown) + .pip-span__login {
   position: absolute;
-  font-family: "Helvética", sans-serif;
   font-weight: 600;
   font-size: 15px;
   color: var(--font-textcolor);
   top: -9px;
   left: 1.6rem;
-  color: black;
   transition: all ease-out 0.2s;
 }
 
@@ -161,18 +158,10 @@ div.pip-div__Email--focus {
     border: none;
     width: 345px;
     height: 30px;
-    font-family: 'Helvética', sans-serif;
     font-weight: 400;
     font-size: 14px;
     align-self: center;
     background-color: rgb(255, 255, 255);
-}
-
-.pip-span_login__check {
-  display: flex;
-  align-self: center;
-  padding-right: 0.5rem;
-  padding-left: 0.5rem;
 }
 
 .pip-div__login {
@@ -197,6 +186,7 @@ div.pip-div__Email--focus {
   padding-left: 0.5rem;
 }
 
+/* Ver Senha  */
 .pip-span_eyeSenha {
   display: flex;
   cursor: pointer;
@@ -213,13 +203,11 @@ div.pip-div__Email--focus {
 /* CheckBox */
 .pip-div_Checkbox {
   width: 100%;
-  font-family: "Helvética", sans-serif;
   font-size: 13px;
-  display: inline-flex;
+  display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
   flex-direction: row;
-  color: var(--font-textcolor);
   margin: 0.1rem 0rem 0.7rem 0rem;
 }
 
@@ -231,13 +219,6 @@ div.pip-div__Email--focus {
   display: flex;
 }
 
-.pip-span_ESenha {
-  color: var(--font-textcolor);
-}
-
-.pip-span_ESenha:hover {
-  color: #4949ff;
-}
 
 .pip-inp_Checkbox {
   background-color: gray;
@@ -246,17 +227,17 @@ div.pip-div__Email--focus {
   height: 0.9rem;
 }
 
+/* Date  */
 .pip-div_Date {
   margin-bottom: 0.8rem;
 }
 
 .pip-inp_Date {
   padding: 0.5rem;
-  background-color: #4338f3;
+  background-color: var(--bgbutton);
   border: none;
   outline: none;
   color: white;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 0.9rem;
   border-radius: 2px;
 }
@@ -279,7 +260,6 @@ div.pip-div__Email--focus {
 .pip-btn_Btnlogin {
   background-color: var(--bgbutton);
   cursor: pointer;
-  font-family: "Helvética", sans-serif;
   font-weight: 600;
   font-size: 16px;
   color: white;
@@ -296,15 +276,13 @@ div.pip-div__Email--focus {
 
 /* Nova Conta */
 .pip-div_NConta {
-  display: inline-flex;
+  display: flex;
   justify-content: center;
-  font-family: "Helvética", sans-serif;
   font-weight: 400;
   margin: 1rem 0rem;
 }
 
 .pip-span_NConta {
-  color: var(--font-textcolor);
   font-size: 16px;
 }
 
@@ -313,25 +291,6 @@ div.pip-div__Email--focus {
 }
 
 /* Icons */
-.uil-check {
-  font-size: 24px;
-  display: flex;
-}
-.uil-exclamation-triangle {
-  display: flex;
-  font: 24px;
-  color: red;
-}
-
-#iconCheck {
-  display: flex;
-  color: rgb(0, 218, 0);
-}
-
-.uil-at {
-  font-size: 24px;
-}
-
-.uil-key-skeleton-alt {
-  font-size: 25px;
+.icons{
+  width: 24px;
 }

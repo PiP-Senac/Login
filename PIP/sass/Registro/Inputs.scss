@@ -1,0 +1,285 @@
+body {
+    overflow-y: hidden;
+    background-color: var(--background-image);
+    color: var(--font-textcolor);
+    font-family: var(--font-padrao);
+  }
+  
+  .test {
+    display: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 0.3rem 0rem;
+  }
+  
+  .val-icons {
+    width: 16px;
+    padding-right: 0.3rem;
+  }
+  
+  .val-span {
+    display: flex;
+    align-items: center;
+    padding: 0.1rem 0rem;
+    font-size: 13px;
+    opacity: 60%;
+  }
+  
+  .valid {
+    opacity: 100%;
+  }
+  
+  .val-span > .val-icons {
+    filter: invert(53%) sepia(44%) saturate(4753%) hue-rotate(327deg)
+      brightness(101%) contrast(90%);
+  }
+  
+  .valid > .val-icons {
+    filter: invert(81%) sepia(36%) saturate(962%) hue-rotate(59deg)
+      brightness(94%) contrast(87%);
+  }
+  .invalid {
+  }
+  
+  div.error {
+    border-color: #e57f7f;
+  }
+  
+  div.sucess {
+    border-color: #8dde8d;
+  }
+  
+  div.focoAtual {
+    border-color: var(--color-label);
+  }
+  
+  div.pip-div__Senha--focus {
+    border-color:var(--color-label);
+  }
+  
+  div.pip-div__Email--focus {
+    border-color:var(--color-label);
+  }
+  
+  /* div */
+  .pip-registro_container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* form */
+  .pip-form_container {
+    display: flex;
+    flex-direction: column;
+    padding: 4.3rem;
+    background-color: var(--form-bgcolor);
+    padding-bottom: 2.3em;
+    border-radius: 10px;
+  }
+  
+  /* Login inp Format */
+  .pip-div_login {
+    padding-bottom: 12px;
+  }
+  
+  .pip-label_login {
+    padding-bottom: 12px;
+    font-weight: 600;
+    font-size: 15px;
+  }
+  
+  .pip-div__login {
+    display: flex;
+    position: relative;
+    width: 330px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 4px;
+    border: 1px solid rgb(211 211 211);
+    border-radius: 3px;
+  }
+  .pip-div__login,
+  .pip-inp_login{
+    padding: 0rem;
+  }
+  
+  .pip-div__login:hover {
+    box-shadow: 0px 1px 2px rgba(172, 172, 172, 0.75);
+  }
+  
+  .pip-div__login::placeholder {
+    opacity: 0%;
+  }
+  
+  .pip-inp_login + .pip-span__login {
+    position: absolute;
+    top: 11px;
+    left: 2.5rem;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: white;
+    color: #797575;
+    transition: all ease-out 0.2s;
+    padding: 0rem 0.2rem;
+  }
+  
+  .pip-inp_login:focus + .pip-span__login,
+  .pip-inp_login:not(:placeholder-shown) + .pip-span__login {
+    position: absolute;
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--font-textcolor);
+    top: -9px;
+    left: 1.6rem;
+    transition: all ease-out 0.2s;
+  }
+  
+  .pip-inp_login::placeholder {
+    opacity: 0%;
+  }
+  
+  .pip-inp_login{
+    display: flex;
+      border: none;
+      width: 345px;
+      height: 30px;
+      font-weight: 400;
+      font-size: 14px;
+      align-self: center;
+      background-color: rgb(255, 255, 255);
+  }
+  
+  .pip-div__login {
+    display: flex;
+    position: relative;
+    width: 330px;
+    border: 1px solid rgb(211 211 211);
+    border-radius: 3px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 4px;
+  }
+  
+  .pip-div__login:hover {
+    box-shadow: 0px 1px 2px rgba(172, 172, 172, 0.75);
+  }
+  
+  .pip-span_login {
+    display: flex;
+    align-self: center;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+  
+  /* Ver Senha  */
+  .pip-span_eyeSenha {
+    display: flex;
+    cursor: pointer;
+    align-self: center;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+  
+  .pip-img_eyeSenha {
+    width: 20px;
+    opacity: 40%;
+  }
+  
+  /* CheckBox */
+  .pip-div_Checkbox {
+    width: 100%;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin: 0.1rem 0rem 0.7rem 0rem;
+  }
+  
+  .pip-span_Checkbox {
+    padding-left: 0.3rem;
+  }
+  
+  .pip-label_Checkbox {
+    display: flex;
+  }
+  
+  
+  .pip-inp_Checkbox {
+    background-color: gray;
+    border-radius: 2px;
+    width: 0.9rem;
+    height: 0.9rem;
+  }
+  
+  /* Date  */
+  .pip-div_Date {
+    margin-bottom: 0.8rem;
+  }
+  
+  .pip-inp_Date {
+    padding: 0.5rem;
+    background-color: var(--bgbutton);
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 0.9rem;
+    border-radius: 2px;
+  }
+  
+  .pip-inp_Date::-webkit-calendar-picker-indicator {
+    background-color: white;
+    padding: 3px;
+    border-radius: 2px;
+    color: black;
+  }
+  
+  /* Button */
+  .pip-div_Btnlogin {
+    display: inline-flex;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  
+  .pip-btn_Btnlogin {
+    background-color: var(--bgbutton);
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+    border: none;
+    width: 100%;
+    height: 2.7rem;
+    letter-spacing: 1px;
+    border-radius: 3px;
+  }
+  
+  .pip-btn_Btnlogin:hover {
+    opacity: 80%;
+  }
+  
+  /* Nova Conta */
+  .pip-div_NConta {
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+    margin: 1rem 0rem;
+  }
+  
+  .pip-span_NConta {
+    font-size: 16px;
+  }
+  
+  .pip-span_NConta:hover {
+    color: #9595ed;
+  }
+  
+  /* Icons */
+  .icons{
+    width: 24px;
+  }
