@@ -2,6 +2,7 @@
 @import "./Button.scss";
 @import "./Variaveis.scss";
 @import "./Normalize.scss";
+@import "./Reset.scss";
 @import "./icons.scss";
 @import "./jsEvents.scss";
 
@@ -17,7 +18,6 @@ width: 100%;
 }
 
 .size_min{
-    min-height: auto;
     min-width: auto;
 }
 
@@ -39,11 +39,7 @@ width: 100%;
     padding-bottom: 2.3em;
     border-radius: 10px;
     /* min 480px */
-    @media only screen and(max-width: $min){ padding: 2.3rem; padding-bottom: 2.3em;}
-    /* min 480px */
-    /* min 480px */
-    /* min 480px */
-    /* min 480px */
+    @media only screen and(max-width: $min){     padding: 2rem; padding-bottom: 1em;}
   }
   
   /* Nova Conta */
@@ -52,12 +48,12 @@ width: 100%;
     justify-content: center;
     font-weight: 400;
     margin: 1rem 0rem;
-    @media only screen and(max-width: $min){ margin: 1rem 0rem;}
+    @media only screen and(max-width: $min){ margin: .5rem 0rem;}
   }
   
   .pip-span_NConta {
     font-size: 16px;
-    @media only screen and(max-width: $min){ font-size: 12px;}
+    @media only screen and(max-width: $min){ font-size: 14px;}
   }
   
   .pip-span_NConta:hover {

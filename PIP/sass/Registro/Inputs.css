@@ -3,6 +3,12 @@
 .pip-div_login {
   padding-bottom: 0.7rem;
   width: calc(10vh + 13rem);
+  /* min 480px */
+}
+@media only screen and (max-width: 480px) {
+  .pip-div_login {
+    width: calc(10vh + 10rem);
+  }
 }
 
 .pip-label_login {
@@ -20,6 +26,12 @@
   margin-top: 0.3rem;
   border: 1px solid rgb(211, 211, 211);
   border-radius: 3px;
+  /* min 480px */
+}
+@media only screen and (max-width: 480px) {
+  .pip-div__login {
+    height: 2.3rem;
+  }
 }
 
 .pip-div__login:hover {
@@ -102,11 +114,17 @@ input[type=text], input[type=email] {
   display: flex;
   border: none;
   width: 75%;
-  height: 1.9rem;
+  height: 67%;
   font-weight: 400;
   font-size: 14px;
   align-self: center;
   background-color: rgb(255, 255, 255);
+  /* min 480px */
+}
+@media only screen and (max-width: 480px) {
+  .pip-inp_login {
+    font-size: 12px;
+  }
 }
 
 .pip-div__login:hover {

@@ -28,7 +28,7 @@ if(isset($_POST['Email']) || isset($_POST['Senha'])) {
 
             $_SESSION['Email'] = $usuario['Email'];
             $_SESSION['Senha'] = $usuario['Senha'];
-
+            
             header("Location: ../home.php");
 
         } else {

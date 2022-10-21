@@ -11,7 +11,7 @@ include("./php/protect.php");
     <title>Document</title>
 </head>
 <body>
-
+<h1>Bom dia <?php echo $_SESSION['Email'];  ?></h1> 
 <a href="./php/logout.php">Sair</a>
 </body>
 </html>

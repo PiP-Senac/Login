@@ -3,7 +3,13 @@
 /* Login inp Format */
 .pip-div_login {
   padding-bottom: 0.7rem;
-  width: calc(10vh + 14rem);
+  width: calc(10vh + 13rem);
+  /* min 480px */
+}
+@media only screen and (max-width: 480px) {
+  .pip-div_login {
+    width: calc(10vh + 10rem);
+  }
 }
 
 .pip-label_login {
@@ -21,6 +27,12 @@
   margin-top: 0.3rem;
   border: 1px solid rgb(211, 211, 211);
   border-radius: 3px;
+  /* min 480px */
+}
+@media only screen and (max-width: 480px) {
+  .pip-div__login {
+    height: 2.3rem;
+  }
 }
 
 .pip-div__login:hover {
@@ -102,12 +114,18 @@ input[type=text], input[type=email] {
 .pip-inp_login {
   display: flex;
   border: none;
-  width: 71%;
-  height: 1.9rem;
+  width: 75%;
+  height: 67%;
   font-weight: 400;
   font-size: 14px;
   align-self: center;
   background-color: rgb(255, 255, 255);
+  /* min 480px */
+}
+@media only screen and (max-width: 480px) {
+  .pip-inp_login {
+    font-size: 12px;
+  }
 }
 
 .pip-div__login:hover {
@@ -481,9 +499,69 @@ a {
   text-decoration: none;
 }
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 /* Icons */
 .icons {
   width: 20px;
+  /* min 480px */
+}
+@media only screen and (max-width: 480px) {
+  .icons {
+    width: 18px;
+  }
 }
 
 /* Ver Senha  */
@@ -569,7 +647,6 @@ body {
 }
 
 .size_min {
-  min-height: auto;
   min-width: auto;
 }
 
@@ -591,15 +668,11 @@ body {
   padding-bottom: 2.3em;
   border-radius: 10px;
   /* min 480px */
-  /* min 480px */
-  /* min 480px */
-  /* min 480px */
-  /* min 480px */
 }
 @media only screen and (max-width: 480px) {
   .pip-form_container {
-    padding: 2.3rem;
-    padding-bottom: 2.3em;
+    padding: 2rem;
+    padding-bottom: 1em;
   }
 }
 
@@ -612,7 +685,7 @@ body {
 }
 @media only screen and (max-width: 480px) {
   .pip-div_NConta {
-    margin: 1rem 0rem;
+    margin: 0.5rem 0rem;
   }
 }
 
@@ -621,7 +694,7 @@ body {
 }
 @media only screen and (max-width: 480px) {
   .pip-span_NConta {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 

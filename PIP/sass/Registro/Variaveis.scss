@@ -13,3 +13,12 @@ $small:768px;
 $medium:1024px;
 $big:1200px;
 $very-big:1201px
+ 
+    /* min 768px 
+    @media only screen and(max-width: $small){ padding: 2.3rem; padding-bottom: 2.3em;}
+     min 1024px 
+    @media only screen and(max-width: $medium){ padding: 2.3rem; padding-bottom: 2.3em;}
+     min 1200px 
+    @media only screen and(max-width: $big){ padding: 2.3rem; padding-bottom: 2.3em;}
+     min 1201px 
+    @media only screen and(max-width: $very-big){ padding: 2.3rem; padding-bottom: 2.3em;}  */

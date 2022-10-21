@@ -1,6 +1,8 @@
 /* Icons */
 .icons{
     width: 20px;
+        /* min 480px */
+        @media only screen and(max-width: $min){width: 18px;}
   }
 
   /* Ver Senha  */
