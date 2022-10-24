@@ -172,7 +172,7 @@ input[type=text], input[type=email] {
 
 .pip-inp_Date {
   padding: 0.5rem;
-  background-color: #8e4dfb;
+  background-color: #BD1634;
   border: none;
   outline: none;
   color: white;
@@ -197,7 +197,7 @@ input[type=text], input[type=email] {
 }
 
 .pip-btn_Btnlogin {
-  background-color: #8e4dfb;
+  background-color: #BD1634;
   cursor: pointer;
   font-weight: 600;
   font-size: 16px;
@@ -624,22 +624,96 @@ div.sucess {
 }
 
 div.focoAtual {
-  border-color: #8E4DFB;
+  border-color: #000000;
 }
 
 div.pip-div__Senha--focus {
-  border-color: #8E4DFB;
+  border-color: #000000;
 }
 
 div.pip-div__Email--focus {
-  border-color: #8E4DFB;
+  border-color: #000000;
+}
+
+/* Media Query */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.pip-footer {
+  padding: 1rem 0rem;
+}
+
+.pip-footer_div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.pip-footer_a {
+  padding: 0rem 1rem;
+}
+
+.pip-footer_span {
+  color: white;
 }
 
 body {
   overflow-y: hidden;
-  background-color: #8e4dfb;
+  background-image: linear-gradient(180deg, #BD1433 0%, #570D34 64.58%, #280B37 100%);
   color: black;
   font-family: "Helvética", sans-serif;
+  background-size: cover;
 }
 
 .size_max {
@@ -655,6 +729,7 @@ body {
   width: 100vw;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -663,6 +738,7 @@ body {
 .pip-form_container {
   display: flex;
   flex-direction: column;
+  margin: auto;
   padding: 4.3rem;
   background-color: white;
   padding-bottom: 2.3em;
@@ -682,6 +758,7 @@ body {
   justify-content: center;
   font-weight: 400;
   margin: 1rem 0rem;
+  color: black;
 }
 @media only screen and (max-width: 480px) {
   .pip-div_NConta {
@@ -691,6 +768,7 @@ body {
 
 .pip-span_NConta {
   font-size: 16px;
+  color: black;
 }
 @media only screen and (max-width: 480px) {
   .pip-span_NConta {
@@ -699,5 +777,5 @@ body {
 }
 
 .pip-span_NConta:hover {
-  color: #9595ed;
+  color: #eb2146;
 }/*# sourceMappingURL=Registro.css.map */

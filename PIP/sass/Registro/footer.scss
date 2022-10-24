@@ -1,0 +1,17 @@
+@import "./Variaveis.scss";
+@import "./Reset.scss";
+
+.pip-footer{
+padding: 1rem 0rem;
+}
+.pip-footer_div{
+display: flex;
+flex-direction: row;
+justify-content: center;
+}
+.pip-footer_a{
+padding: 0rem 1rem;
+}
+.pip-footer_span{
+color: white;
+}

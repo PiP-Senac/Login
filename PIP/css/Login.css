@@ -1,8 +1,8 @@
 :root{
---background-image: #B48DFA;
+--backgroun-gradient: linear-gradient(180deg, #BD1433 0%, #570D34 64.58%, #280B37 100%);
 --form-bgcolor:white;
 --font-textcolor:black;
---bgbutton: #B48DFA;
+--bgbutton: #BD1634;
 --bgshadow:0 4px 15px 0 #4949FF;
 --font-linkcolor:#4169E1;
 --font-padrao: 'Helvética', sans-serif;
@@ -11,7 +11,7 @@
 
 body {
   overflow-y: hidden;
-  background-color: var(--background-image);
+  background: var(--backgroun-gradient);
 }
 
 /* functions  */

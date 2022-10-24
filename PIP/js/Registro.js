@@ -43,7 +43,7 @@ function validarCEmail() {
 inpCEmail.addEventListener('input', validarCEmail);
 
 // Border Effect
-var inputE = document.querySelectorAll(".pip-inp_Email");
+var inputE = document.querySelectorAll(".inp_Email");
 
 $(document).ready(function(){
   for(i = 0; i < inputE.length; i++){
@@ -63,7 +63,7 @@ $(inputE[i]).blur(function() {
 /* Senha */
 
 /* Mostrar Senha */
-let inputS = document.querySelectorAll('.pip-inp_Senha');
+let inputS = document.querySelectorAll('.inp_Senha');
 let btn = document.querySelectorAll('#olho');
 for(i = 0 ;i < btn.length;i++){
 btn[i].addEventListener('click', function() {
@@ -88,7 +88,7 @@ $(document).ready(function(){
   }
 })
 
-/* Validação Senha */
+/* Validação Senha 
 var divSenha = document.querySelectorAll("pip")
 var form = document.querySelector(".pip-form_container");
 var test = document.querySelector(".test");
@@ -169,7 +169,7 @@ if($(valSpan[i]).hasClass("valid")){
 }
 }
 
-});
+});*/
 // Senha == Confirmar Senha
 
 function validarCSenha() {

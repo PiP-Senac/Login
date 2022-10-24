@@ -5,12 +5,14 @@
 @import "./Reset.scss";
 @import "./icons.scss";
 @import "./jsEvents.scss";
+@import "./footer.scss";
 
 body {
     overflow-y: hidden;
-    background-color:$bgcolor;
+    background-image:$bgcolor;
     color: $font-color;
     font-family: $fontpadrao;
+    background-size: cover;
   }
 
 .size_max{
@@ -26,6 +28,7 @@ width: 100%;
     width: 100vw;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
@@ -34,6 +37,7 @@ width: 100%;
   .pip-form_container {
     display: flex;
     flex-direction: column;
+    margin: auto;
     padding: 4.3rem;
     background-color:$formBgcolor ;
     padding-bottom: 2.3em;
@@ -48,14 +52,16 @@ width: 100%;
     justify-content: center;
     font-weight: 400;
     margin: 1rem 0rem;
+    color: $font-color;
     @media only screen and(max-width: $min){ margin: .5rem 0rem;}
   }
   
   .pip-span_NConta {
     font-size: 16px;
+    color: $font-color;
     @media only screen and(max-width: $min){ font-size: 14px;}
   }
   
   .pip-span_NConta:hover {
-    color: #9595ed;
+    color: $linkcolor;
   }
