@@ -1,0 +1,28 @@
+@charset "UTF-8";
+/* Variaveis */
+/* Media Query  */
+/* Button */
+.pip-div_Btnlogin {
+  display: inline-flex;
+  justify-content: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.pip-btn_Btnlogin {
+  background-color: #BD1634;
+  cursor: pointer;
+  font-family: "Helvética", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: white;
+  border: none;
+  width: 100%;
+  height: 2.7rem;
+  letter-spacing: 1px;
+  border-radius: 3px;
+}
+
+.pip-btn_Btnlogin:active {
+  opacity: 75%;
+}/*# sourceMappingURL=Button.css.map */

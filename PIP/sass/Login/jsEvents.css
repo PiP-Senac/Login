@@ -1,0 +1,17 @@
+/* Variaveis */
+/* Media Query  */
+div.pip-div__Email--error {
+  border-color: #da5353;
+}
+
+div.sucess {
+  border-color: #55d855;
+}
+
+div.focoAtual {
+  border-color: #ffffff;
+}
+
+div.pip-div__Senha--focus {
+  border-color: #ffffff;
+}/*# sourceMappingURL=jsEvents.css.map */

@@ -1,0 +1,19 @@
+@import "./Variaveis.scss";
+
+div.pip-div__Email--error{
+    border-color: #da5353;
+  }
+  
+  div.sucess{
+    border-color:#55d855;
+  }
+  
+  div.focoAtual{
+    border-color: $color-label;
+  }
+  
+  div.pip-div__Senha--focus{
+    border-color: $color-label;
+  }
+  
+  

@@ -1,1 +1,743 @@
-/*# sourceMappingURL=login.css.map */
+@charset "UTF-8";
+/* Variaveis */
+/* Media Query  */
+.pip-div_Email {
+  padding-bottom: 1.5rem;
+}
+
+.pip-label_Email {
+  padding-bottom: 12px;
+  font-family: "Helvética", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  color: white;
+}
+
+.pip-div__Email {
+  display: flex;
+  position: relative;
+  width: 330px;
+  height: 40px;
+  background-color: #170622;
+  margin-top: 4px;
+  border-bottom: 1px solid #ffffff;
+  border-radius: 3px;
+}
+
+.pip-div__Email .pip-inp_Email {
+  padding: 0rem;
+}
+
+.pip-div__Email:hover {
+  box-shadow: 0px 1px 2px rgba(172, 172, 172, 0.75);
+}
+
+.pip-inp_Email::-moz-placeholder {
+  opacity: 0%;
+}
+
+.pip-inp_Email:-ms-input-placeholder {
+  opacity: 0%;
+}
+
+.pip-inp_Email::placeholder {
+  opacity: 0%;
+}
+
+.pip-inp_Email + .pip-span__Email {
+  position: absolute;
+  top: 11px;
+  left: 2.5rem;
+  font-size: 14px;
+  font-family: "Helvética", sans-serif;
+  font-weight: 400;
+  color: #b4b4b4;
+  transition: all ease-out 0.2s;
+  padding: 0rem 0.2rem;
+}
+
+.pip-inp_Email:not(:-moz-placeholder-shown) + .pip-span__Email {
+  position: absolute;
+  font-family: "Helvética", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  color: white;
+  background-color: transparent;
+  top: -9px;
+  left: 1.6rem;
+  -moz-transition: all ease-out 0.2s;
+  transition: all ease-out 0.2s;
+}
+
+.pip-inp_Email:not(:-ms-input-placeholder) + .pip-span__Email {
+  position: absolute;
+  font-family: "Helvética", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  color: white;
+  background-color: transparent;
+  top: -9px;
+  left: 1.6rem;
+  -ms-transition: all ease-out 0.2s;
+  transition: all ease-out 0.2s;
+}
+
+.pip-inp_Email:focus + .pip-span__Email, .pip-inp_Email:not(:placeholder-shown) + .pip-span__Email {
+  position: absolute;
+  font-family: "Helvética", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  color: white;
+  background-color: transparent;
+  top: -9px;
+  left: 1.6rem;
+  transition: all ease-out 0.2s;
+}
+
+.pip-inp_Senha + .pip-span__Senha {
+  position: absolute;
+  top: 11px;
+  left: 2.5rem;
+  font-size: 14px;
+  font-family: "Helvética", sans-serif;
+  font-weight: 400;
+  color: #b4b4b4;
+  transition: all ease-out 0.2s;
+  padding: 0rem 0.2rem;
+}
+
+.pip-inp_Senha:not(:-moz-placeholder-shown) + .pip-span__Senha {
+  position: absolute;
+  font-family: "Helvética", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  background-color: transparent;
+  color: white;
+  top: -9px;
+  left: 1.6rem;
+  -moz-transition: all ease-out 0.2s;
+  transition: all ease-out 0.2s;
+}
+
+.pip-inp_Senha:not(:-ms-input-placeholder) + .pip-span__Senha {
+  position: absolute;
+  font-family: "Helvética", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  background-color: transparent;
+  color: white;
+  top: -9px;
+  left: 1.6rem;
+  -ms-transition: all ease-out 0.2s;
+  transition: all ease-out 0.2s;
+}
+
+.pip-inp_Senha:focus + .pip-span__Senha, .pip-inp_Senha:not(:placeholder-shown) + .pip-span__Senha {
+  position: absolute;
+  font-family: "Helvética", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  background-color: transparent;
+  color: white;
+  top: -9px;
+  left: 1.6rem;
+  transition: all ease-out 0.2s;
+}
+
+.pip-inp_Senha::-moz-placeholder {
+  opacity: 0%;
+}
+
+.pip-inp_Senha:-ms-input-placeholder {
+  opacity: 0%;
+}
+
+.pip-inp_Senha::placeholder {
+  opacity: 0%;
+}
+
+.pip-inp_Email {
+  display: flex;
+  border: none;
+  width: 345px;
+  height: 30px;
+  font-family: "Helvética", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  align-self: center;
+  color: white;
+  background-color: #170622;
+}
+
+.pip-span_Email {
+  display: flex;
+  align-self: center;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.pip-span_Email__check {
+  display: flex;
+  align-self: center;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.pip-div_Senha {
+  padding-bottom: 1.5rem;
+}
+
+.pip-label_Senha {
+  font-family: "Helvética", sans-serif;
+  font-weight: 600;
+  color: white;
+  font-size: 15px;
+  padding-bottom: 12px;
+}
+
+.pip-div__Senha {
+  display: flex;
+  position: relative;
+  width: 330px;
+  height: 40px;
+  background-color: #170622;
+  margin-top: 4px;
+  border-bottom: 1px solid #ffffff;
+  border-radius: 3px;
+}
+
+.pip-div__Senha:hover {
+  box-shadow: 0px 1px 2px rgba(172, 172, 172, 0.75);
+}
+
+.pip-inp_Senha {
+  display: flex;
+  border: none;
+  width: 345px;
+  height: 30px;
+  align-self: center;
+  color: white;
+  background-color: #170622;
+  font-size: 14px;
+  font-family: "Helvética", sans-serif;
+  font-weight: 400;
+}
+
+.pip-span_Senha {
+  display: flex;
+  align-self: center;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.pip-span_eyeSenha {
+  display: flex;
+  cursor: pointer;
+  align-self: center;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.pip-img_eyeSenha {
+  width: 20px;
+  opacity: 40%;
+}
+
+/* CheckBox */
+.pip-div_Checkbox {
+  width: 100%;
+  font-family: "Helvética", sans-serif;
+  font-size: 13px;
+  display: inline-flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  color: white;
+  margin: 0.1rem 0rem 1.7rem 0rem;
+}
+
+.pip-span_Checkbox {
+  padding-left: 0.3rem;
+}
+
+.pip-label_Checkbox {
+  display: flex;
+}
+
+.pip-span_ESenha {
+  color: #ffffff;
+}
+
+.pip-span_ESenha:hover {
+  color: #9166ad;
+}
+
+.pip-inp_Checkbox {
+  background-color: gray;
+  border-radius: 2px;
+  width: 0.9rem;
+  height: 0.9rem;
+}
+
+.g-recaptcha {
+  border-radius: 2px;
+}
+
+/* Variaveis */
+/* Media Query  */
+/* Button */
+.pip-div_Btnlogin {
+  display: inline-flex;
+  justify-content: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.pip-btn_Btnlogin {
+  background-color: #BD1634;
+  cursor: pointer;
+  font-family: "Helvética", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: white;
+  border: none;
+  width: 100%;
+  height: 2.7rem;
+  letter-spacing: 1px;
+  border-radius: 3px;
+}
+
+.pip-btn_Btnlogin:active {
+  opacity: 75%;
+}
+
+/* Variaveis */
+/* Media Query  */
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15; /* 1 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+input[type=email], input[type=password], input[type=text] {
+  outline: none;
+}
+
+textarea:focus, input:focus, select:focus {
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Icons */
+.icons {
+  width: 24px;
+  filter: invert(91%) sepia(97%) saturate(32%) hue-rotate(218deg) brightness(112%) contrast(100%);
+}
+
+/* Variaveis */
+/* Media Query  */
+div.pip-div__Email--error {
+  border-color: #da5353;
+}
+
+div.sucess {
+  border-color: #55d855;
+}
+
+div.focoAtual {
+  border-color: #ffffff;
+}
+
+div.pip-div__Senha--focus {
+  border-color: #ffffff;
+}
+
+/*  Login  */
+body {
+  overflow-y: hidden;
+  background: linear-gradient(180deg, #BD1433 0%, #570D34 64.58%, #280B37 100%);
+}
+
+.pip-login_container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.pip-div_logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0rem 0rem 1.5rem 0rem;
+}
+
+.pip-span_logo, .pip-h1_logo {
+  color: white;
+  font-family: "Helvética", sans-serif;
+}
+
+.pip-h1_logo {
+  font-size: 2rem;
+}
+
+.pip-span_logo {
+  opacity: 40%;
+}
+
+.pip-img_logo {
+  width: 180px;
+}
+
+.pip-form_container {
+  display: flex;
+  flex-direction: column;
+  padding: 4.3rem;
+  background-color: #240B35;
+  padding-bottom: 2.3em;
+  border-radius: 10px 0px 0px 10px;
+}
+
+/* Nova Conta */
+.pip-div_NConta {
+  display: inline-flex;
+  justify-content: center;
+  font-family: "Helvética", sans-serif;
+  font-weight: 400;
+  margin: 1rem 0rem;
+}
+
+.pip-span_NConta {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.pip-span_NConta:hover {
+  color: #ed9595;
+}/*# sourceMappingURL=login.css.map */

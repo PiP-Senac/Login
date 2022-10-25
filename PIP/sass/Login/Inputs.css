@@ -1,0 +1,284 @@
+@charset "UTF-8";
+/* Variaveis */
+/* Media Query  */
+.pip-div_Email {
+  padding-bottom: 1.5rem;
+}
+
+.pip-label_Email {
+  padding-bottom: 12px;
+  font-family: "Helvética", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  color: white;
+}
+
+.pip-div__Email {
+  display: flex;
+  position: relative;
+  width: 330px;
+  height: 40px;
+  background-color: #170622;
+  margin-top: 4px;
+  border-bottom: 1px solid #ffffff;
+  border-radius: 3px;
+}
+
+.pip-div__Email .pip-inp_Email {
+  padding: 0rem;
+}
+
+.pip-div__Email:hover {
+  box-shadow: 0px 1px 2px rgba(172, 172, 172, 0.75);
+}
+
+.pip-inp_Email::-moz-placeholder {
+  opacity: 0%;
+}
+
+.pip-inp_Email:-ms-input-placeholder {
+  opacity: 0%;
+}
+
+.pip-inp_Email::placeholder {
+  opacity: 0%;
+}
+
+.pip-inp_Email + .pip-span__Email {
+  position: absolute;
+  top: 11px;
+  left: 2.5rem;
+  font-size: 14px;
+  font-family: "Helvética", sans-serif;
+  font-weight: 400;
+  color: #b4b4b4;
+  transition: all ease-out 0.2s;
+  padding: 0rem 0.2rem;
+}
+
+.pip-inp_Email:not(:-moz-placeholder-shown) + .pip-span__Email {
+  position: absolute;
+  font-family: "Helvética", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  color: white;
+  background-color: transparent;
+  top: -9px;
+  left: 1.6rem;
+  -moz-transition: all ease-out 0.2s;
+  transition: all ease-out 0.2s;
+}
+
+.pip-inp_Email:not(:-ms-input-placeholder) + .pip-span__Email {
+  position: absolute;
+  font-family: "Helvética", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  color: white;
+  background-color: transparent;
+  top: -9px;
+  left: 1.6rem;
+  -ms-transition: all ease-out 0.2s;
+  transition: all ease-out 0.2s;
+}
+
+.pip-inp_Email:focus + .pip-span__Email, .pip-inp_Email:not(:placeholder-shown) + .pip-span__Email {
+  position: absolute;
+  font-family: "Helvética", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  color: white;
+  background-color: transparent;
+  top: -9px;
+  left: 1.6rem;
+  transition: all ease-out 0.2s;
+}
+
+.pip-inp_Senha + .pip-span__Senha {
+  position: absolute;
+  top: 11px;
+  left: 2.5rem;
+  font-size: 14px;
+  font-family: "Helvética", sans-serif;
+  font-weight: 400;
+  color: #b4b4b4;
+  transition: all ease-out 0.2s;
+  padding: 0rem 0.2rem;
+}
+
+.pip-inp_Senha:not(:-moz-placeholder-shown) + .pip-span__Senha {
+  position: absolute;
+  font-family: "Helvética", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  background-color: transparent;
+  color: white;
+  top: -9px;
+  left: 1.6rem;
+  -moz-transition: all ease-out 0.2s;
+  transition: all ease-out 0.2s;
+}
+
+.pip-inp_Senha:not(:-ms-input-placeholder) + .pip-span__Senha {
+  position: absolute;
+  font-family: "Helvética", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  background-color: transparent;
+  color: white;
+  top: -9px;
+  left: 1.6rem;
+  -ms-transition: all ease-out 0.2s;
+  transition: all ease-out 0.2s;
+}
+
+.pip-inp_Senha:focus + .pip-span__Senha, .pip-inp_Senha:not(:placeholder-shown) + .pip-span__Senha {
+  position: absolute;
+  font-family: "Helvética", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  background-color: transparent;
+  color: white;
+  top: -9px;
+  left: 1.6rem;
+  transition: all ease-out 0.2s;
+}
+
+.pip-inp_Senha::-moz-placeholder {
+  opacity: 0%;
+}
+
+.pip-inp_Senha:-ms-input-placeholder {
+  opacity: 0%;
+}
+
+.pip-inp_Senha::placeholder {
+  opacity: 0%;
+}
+
+.pip-inp_Email {
+  display: flex;
+  border: none;
+  width: 345px;
+  height: 30px;
+  font-family: "Helvética", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  align-self: center;
+  color: white;
+  background-color: #170622;
+}
+
+.pip-span_Email {
+  display: flex;
+  align-self: center;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.pip-span_Email__check {
+  display: flex;
+  align-self: center;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.pip-div_Senha {
+  padding-bottom: 1.5rem;
+}
+
+.pip-label_Senha {
+  font-family: "Helvética", sans-serif;
+  font-weight: 600;
+  color: white;
+  font-size: 15px;
+  padding-bottom: 12px;
+}
+
+.pip-div__Senha {
+  display: flex;
+  position: relative;
+  width: 330px;
+  height: 40px;
+  background-color: #170622;
+  margin-top: 4px;
+  border-bottom: 1px solid #ffffff;
+  border-radius: 3px;
+}
+
+.pip-div__Senha:hover {
+  box-shadow: 0px 1px 2px rgba(172, 172, 172, 0.75);
+}
+
+.pip-inp_Senha {
+  display: flex;
+  border: none;
+  width: 345px;
+  height: 30px;
+  align-self: center;
+  color: white;
+  background-color: #170622;
+  font-size: 14px;
+  font-family: "Helvética", sans-serif;
+  font-weight: 400;
+}
+
+.pip-span_Senha {
+  display: flex;
+  align-self: center;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.pip-span_eyeSenha {
+  display: flex;
+  cursor: pointer;
+  align-self: center;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.pip-img_eyeSenha {
+  width: 20px;
+  opacity: 40%;
+}
+
+/* CheckBox */
+.pip-div_Checkbox {
+  width: 100%;
+  font-family: "Helvética", sans-serif;
+  font-size: 13px;
+  display: inline-flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  color: white;
+  margin: 0.1rem 0rem 1.7rem 0rem;
+}
+
+.pip-span_Checkbox {
+  padding-left: 0.3rem;
+}
+
+.pip-label_Checkbox {
+  display: flex;
+}
+
+.pip-span_ESenha {
+  color: #ffffff;
+}
+
+.pip-span_ESenha:hover {
+  color: #9166ad;
+}
+
+.pip-inp_Checkbox {
+  background-color: gray;
+  border-radius: 2px;
+  width: 0.9rem;
+  height: 0.9rem;
+}
+
+.g-recaptcha {
+  border-radius: 2px;
+}/*# sourceMappingURL=Inputs.css.map */
