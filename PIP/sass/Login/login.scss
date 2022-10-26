@@ -8,12 +8,10 @@
 @import "./OutrasF.scss";
 
 /*  Login  */
-*{
-  font-family: 'Helvética', sans-serif;
-}
 body {
   overflow-y: hidden;
   background: $background-gradient;
+  font-family: 'Helvética', sans-serif;
 }
 
 .pip-login_container {
@@ -24,7 +22,14 @@ body {
     align-items: center;
     justify-content: center;
   }
-  
+  .pip-login_conect{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   width: auto;
+   height: auto;
+  }
+
   .pip-div_logo{
    display: flex;
    flex-direction: column;
@@ -34,7 +39,6 @@ body {
 
   .pip-span_logo, .pip-h1_logo{
 color: $font-textcolor;
-font-family: $font-padrao;
   }
 .pip-h1_logo{
   font-size: 2rem;
@@ -42,14 +46,13 @@ font-family: $font-padrao;
 .pip-span_logo{
   opacity: 40%;
 }
-   .pip-img_logo{
-width: 180px;
-  }
   
   .pip-form_container{
     display: flex;
     flex-direction: column;
-    padding: 4.3rem;
+    padding: 8.34vmin;
+    width: 100%;
+    max-width: 40.2vh;
     background-color:$form-bgcolor;
     border-radius: 10px 0px 0px 10px;
   }
@@ -58,7 +61,6 @@ width: 180px;
 .pip-div_NConta{
     display: inline-flex;
     justify-content: center;
-    font-family: 'Helvética', sans-serif;
     font-weight: 400;
     margin: 1rem 0rem;
 }
@@ -72,14 +74,20 @@ width: 180px;
   color: #ed9595;
 }
 
+.pip-login_conect+.pip-div_inImg{
+  width: 100%;
+}
+
 .pip-div_inImg{
   background-color: #280b377a;
-  height: 664.94px;
   display: flex;
   justify-content: center;
   border-radius: 0px 10px 10px 0px;
+  max-width: 50vw;
+  @media only screen and(max-width: $min){  }
 }
 
 .pip-img_inImg{
-  width: 70%;
+  max-width: 70%;
+  @media only screen and(max-width: $min){  }
 }

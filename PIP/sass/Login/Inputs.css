@@ -1,45 +1,24 @@
-@charset "UTF-8";
 /* Variaveis */
-/*
-    $themes: (
-        $light-theme: (
-            $background-gradient: linear-gradient(180deg, #BD1433 0%, #F28DC3 64.58%, #FFB7DD 99.48%),
-            $form-bgcolor:#ffffff,
-            $font-textcolor:#ffffff,
-            $bgbutton: #BD1634,
-            $bgshadow:0 4px 15px 0 #4949FF,
-            $font-linkcolor:#ffffff,
-            $color-label:#ffffff,
-        ),
-        $dark-theme: (
-            $background-gradient: linear-gradient(180deg, #BD1433 0%, #570D34 64.58%, #280B37 100%),
-            $form-bgcolor:#240B35,
-            $font-textcolor:#ffffff,
-            $bgbutton: #BD1634,
-            $bgshadow:0 4px 15px 0 #4949FF,
-            $font-linkcolor:#ffffff,
-            $color-label:#ffffff,
-        )
-);
-*/
-/* Media Query  */
+/* Media Query */
+.size-max {
+  width: 100%;
+}
+
 .pip-div_Email {
   padding-bottom: 1.5rem;
 }
 
 .pip-label_Email {
   padding-bottom: 12px;
-  font-family: "Helvética", sans-serif;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 1.2rem;
   color: white;
 }
 
 .pip-div__Email {
   display: flex;
   position: relative;
-  width: 330px;
-  height: 40px;
+  height: 2.5rem;
   background-color: #170622;
   margin-top: 4px;
   border-bottom: 1px solid #ffffff;
@@ -70,8 +49,7 @@
   position: absolute;
   top: 11px;
   left: 2.5rem;
-  font-size: 14px;
-  font-family: "Helvética", sans-serif;
+  font-size: 0.97rem;
   font-weight: 400;
   color: #b4b4b4;
   transition: all ease-out 0.2s;
@@ -80,9 +58,8 @@
 
 .pip-inp_Email:not(:-moz-placeholder-shown) + .pip-span__Email {
   position: absolute;
-  font-family: "Helvética", sans-serif;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 0.97rem;
   color: white;
   background-color: transparent;
   top: -9px;
@@ -93,9 +70,8 @@
 
 .pip-inp_Email:not(:-ms-input-placeholder) + .pip-span__Email {
   position: absolute;
-  font-family: "Helvética", sans-serif;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 0.97rem;
   color: white;
   background-color: transparent;
   top: -9px;
@@ -106,9 +82,8 @@
 
 .pip-inp_Email:focus + .pip-span__Email, .pip-inp_Email:not(:placeholder-shown) + .pip-span__Email {
   position: absolute;
-  font-family: "Helvética", sans-serif;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 0.97rem;
   color: white;
   background-color: transparent;
   top: -9px;
@@ -120,8 +95,7 @@
   position: absolute;
   top: 11px;
   left: 2.5rem;
-  font-size: 14px;
-  font-family: "Helvética", sans-serif;
+  font-size: 0.97rem;
   font-weight: 400;
   color: #b4b4b4;
   transition: all ease-out 0.2s;
@@ -130,9 +104,8 @@
 
 .pip-inp_Senha:not(:-moz-placeholder-shown) + .pip-span__Senha {
   position: absolute;
-  font-family: "Helvética", sans-serif;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 0.97rem;
   background-color: transparent;
   color: white;
   top: -9px;
@@ -143,9 +116,8 @@
 
 .pip-inp_Senha:not(:-ms-input-placeholder) + .pip-span__Senha {
   position: absolute;
-  font-family: "Helvética", sans-serif;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 0.97rem;
   background-color: transparent;
   color: white;
   top: -9px;
@@ -156,9 +128,8 @@
 
 .pip-inp_Senha:focus + .pip-span__Senha, .pip-inp_Senha:not(:placeholder-shown) + .pip-span__Senha {
   position: absolute;
-  font-family: "Helvética", sans-serif;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 0.97rem;
   background-color: transparent;
   color: white;
   top: -9px;
@@ -181,11 +152,10 @@
 .pip-inp_Email {
   display: flex;
   border: none;
-  width: 345px;
-  height: 30px;
-  font-family: "Helvética", sans-serif;
+  max-width: 17.7rem;
+  height: 1.88rem;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 0.9rem;
   align-self: center;
   color: white;
   background-color: #170622;
@@ -210,7 +180,6 @@
 }
 
 .pip-label_Senha {
-  font-family: "Helvética", sans-serif;
   font-weight: 600;
   color: white;
   font-size: 15px;
@@ -220,8 +189,7 @@
 .pip-div__Senha {
   display: flex;
   position: relative;
-  width: 330px;
-  height: 40px;
+  height: 2.5rem;
   background-color: #170622;
   margin-top: 4px;
   border-bottom: 1px solid #ffffff;
@@ -235,13 +203,12 @@
 .pip-inp_Senha {
   display: flex;
   border: none;
-  width: 345px;
-  height: 30px;
+  max-width: 14.5rem;
+  height: 1.88rem;
   align-self: center;
   color: white;
   background-color: #170622;
-  font-size: 14px;
-  font-family: "Helvética", sans-serif;
+  font-size: 0.9rem;
   font-weight: 400;
 }
 
@@ -268,7 +235,6 @@
 /* CheckBox */
 .pip-div_Checkbox {
   width: 100%;
-  font-family: "Helvética", sans-serif;
   font-size: 13px;
   display: inline-flex;
   justify-content: space-between;
