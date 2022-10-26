@@ -1,11 +1,36 @@
+         $dark-theme:"dark-theme";
+         $light-theme:"light-theme";
     /* Variaveis */
-    $backgroun-gradient: linear-gradient(180deg, #BD1433 0%, #570D34 64.58%, #280B37 100%);
-    $form-bgcolor:#240B35;
-    $font-textcolor:white;
-    $bgbutton: #BD1634;
-    $bgshadow:0 4px 15px 0 #4949FF;
-    $font-linkcolor:#ffffff;
-    $font-padrao: 'Helvética', sans-serif;
-    $color-label:#ffffff;
+        $background-gradient: linear-gradient(180deg, #BD1433 0%, #570D34 64.58%, #280B37 100%);
+        $form-bgcolor:#240B35;
+        $font-textcolor:white;
+        $bgbutton: #BD1634;
+        $bgshadow:0 4px 15px 0 #4949FF;
+        $font-linkcolor:#ffffff;
+        $font-padrao: 'Helvética', sans-serif;
+        $color-label:#ffffff;
 
+
+    /*
+    $themes: (
+        $light-theme: (
+            $background-gradient: linear-gradient(180deg, #BD1433 0%, #F28DC3 64.58%, #FFB7DD 99.48%),
+            $form-bgcolor:#ffffff,
+            $font-textcolor:#ffffff,
+            $bgbutton: #BD1634,
+            $bgshadow:0 4px 15px 0 #4949FF,
+            $font-linkcolor:#ffffff,
+            $color-label:#ffffff,
+        ),
+        $dark-theme: (
+            $background-gradient: linear-gradient(180deg, #BD1433 0%, #570D34 64.58%, #280B37 100%),
+            $form-bgcolor:#240B35,
+            $font-textcolor:#ffffff,
+            $bgbutton: #BD1634,
+            $bgshadow:0 4px 15px 0 #4949FF,
+            $font-linkcolor:#ffffff,
+            $color-label:#ffffff,
+        )
+);
+*/
     /* Media Query  */

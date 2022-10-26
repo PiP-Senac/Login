@@ -1,5 +1,27 @@
 @charset "UTF-8";
 /* Variaveis */
+/*
+    $themes: (
+        $light-theme: (
+            $background-gradient: linear-gradient(180deg, #BD1433 0%, #F28DC3 64.58%, #FFB7DD 99.48%),
+            $form-bgcolor:#ffffff,
+            $font-textcolor:#ffffff,
+            $bgbutton: #BD1634,
+            $bgshadow:0 4px 15px 0 #4949FF,
+            $font-linkcolor:#ffffff,
+            $color-label:#ffffff,
+        ),
+        $dark-theme: (
+            $background-gradient: linear-gradient(180deg, #BD1433 0%, #570D34 64.58%, #280B37 100%),
+            $form-bgcolor:#240B35,
+            $font-textcolor:#ffffff,
+            $bgbutton: #BD1634,
+            $bgshadow:0 4px 15px 0 #4949FF,
+            $font-linkcolor:#ffffff,
+            $color-label:#ffffff,
+        )
+);
+*/
 /* Media Query  */
 .pip-div_Email {
   padding-bottom: 1.5rem;
@@ -269,7 +291,7 @@
 }
 
 .pip-span_ESenha:hover {
-  color: #9166ad;
+  color: #ed9595;
 }
 
 .pip-inp_Checkbox {
@@ -284,6 +306,28 @@
 }
 
 /* Variaveis */
+/*
+    $themes: (
+        $light-theme: (
+            $background-gradient: linear-gradient(180deg, #BD1433 0%, #F28DC3 64.58%, #FFB7DD 99.48%),
+            $form-bgcolor:#ffffff,
+            $font-textcolor:#ffffff,
+            $bgbutton: #BD1634,
+            $bgshadow:0 4px 15px 0 #4949FF,
+            $font-linkcolor:#ffffff,
+            $color-label:#ffffff,
+        ),
+        $dark-theme: (
+            $background-gradient: linear-gradient(180deg, #BD1433 0%, #570D34 64.58%, #280B37 100%),
+            $form-bgcolor:#240B35,
+            $font-textcolor:#ffffff,
+            $bgbutton: #BD1634,
+            $bgshadow:0 4px 15px 0 #4949FF,
+            $font-linkcolor:#ffffff,
+            $color-label:#ffffff,
+        )
+);
+*/
 /* Media Query  */
 /* Button */
 .pip-div_Btnlogin {
@@ -312,6 +356,28 @@
 }
 
 /* Variaveis */
+/*
+    $themes: (
+        $light-theme: (
+            $background-gradient: linear-gradient(180deg, #BD1433 0%, #F28DC3 64.58%, #FFB7DD 99.48%),
+            $form-bgcolor:#ffffff,
+            $font-textcolor:#ffffff,
+            $bgbutton: #BD1634,
+            $bgshadow:0 4px 15px 0 #4949FF,
+            $font-linkcolor:#ffffff,
+            $color-label:#ffffff,
+        ),
+        $dark-theme: (
+            $background-gradient: linear-gradient(180deg, #BD1433 0%, #570D34 64.58%, #280B37 100%),
+            $form-bgcolor:#240B35,
+            $font-textcolor:#ffffff,
+            $bgbutton: #BD1634,
+            $bgshadow:0 4px 15px 0 #4949FF,
+            $font-linkcolor:#ffffff,
+            $color-label:#ffffff,
+        )
+);
+*/
 /* Media Query  */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -659,6 +725,28 @@ table {
 }
 
 /* Variaveis */
+/*
+    $themes: (
+        $light-theme: (
+            $background-gradient: linear-gradient(180deg, #BD1433 0%, #F28DC3 64.58%, #FFB7DD 99.48%),
+            $form-bgcolor:#ffffff,
+            $font-textcolor:#ffffff,
+            $bgbutton: #BD1634,
+            $bgshadow:0 4px 15px 0 #4949FF,
+            $font-linkcolor:#ffffff,
+            $color-label:#ffffff,
+        ),
+        $dark-theme: (
+            $background-gradient: linear-gradient(180deg, #BD1433 0%, #570D34 64.58%, #280B37 100%),
+            $form-bgcolor:#240B35,
+            $font-textcolor:#ffffff,
+            $bgbutton: #BD1634,
+            $bgshadow:0 4px 15px 0 #4949FF,
+            $font-linkcolor:#ffffff,
+            $color-label:#ffffff,
+        )
+);
+*/
 /* Media Query  */
 div.pip-div__Email--error {
   border-color: #da5353;
@@ -676,7 +764,82 @@ div.pip-div__Senha--focus {
   border-color: #ffffff;
 }
 
+/* Variaveis */
+/*
+    $themes: (
+        $light-theme: (
+            $background-gradient: linear-gradient(180deg, #BD1433 0%, #F28DC3 64.58%, #FFB7DD 99.48%),
+            $form-bgcolor:#ffffff,
+            $font-textcolor:#ffffff,
+            $bgbutton: #BD1634,
+            $bgshadow:0 4px 15px 0 #4949FF,
+            $font-linkcolor:#ffffff,
+            $color-label:#ffffff,
+        ),
+        $dark-theme: (
+            $background-gradient: linear-gradient(180deg, #BD1433 0%, #570D34 64.58%, #280B37 100%),
+            $form-bgcolor:#240B35,
+            $font-textcolor:#ffffff,
+            $bgbutton: #BD1634,
+            $bgshadow:0 4px 15px 0 #4949FF,
+            $font-linkcolor:#ffffff,
+            $color-label:#ffffff,
+        )
+);
+*/
+/* Media Query  */
+.pip-div_separator {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.24);
+  margin-bottom: 1.3rem;
+}
+
+.pip-div_otreg {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.pip-div_gle {
+  margin-right: 1.4rem;
+}
+
+.pip-div_gle, .pip-div_fcb {
+  padding: 0.6rem;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  background-color: #2f0f44;
+  transition: transform 300ms;
+}
+
+.pip-a_gle, .pip-a_fcb {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.pip-img_gle {
+  filter: invert(22%) sepia(71%) saturate(3590%) hue-rotate(352deg) brightness(96%) contrast(86%);
+}
+
+.pip-img_fcb {
+  filter: invert(14%) sepia(95%) saturate(2528%) hue-rotate(231deg) brightness(91%) contrast(109%);
+}
+
+.pip-img_gle, .pip-img_fcb {
+  width: 32px;
+}
+
+.pip-div_gle:hover, .pip-div_fcb:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 7px 1px #2d133f;
+}
+
 /*  Login  */
+* {
+  font-family: "Helvética", sans-serif;
+}
+
 body {
   overflow-y: hidden;
   background: linear-gradient(180deg, #BD1433 0%, #570D34 64.58%, #280B37 100%);
@@ -686,8 +849,8 @@ body {
   width: 100vw;
   height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  flex-direction: row;
+  align-items: center;
   justify-content: center;
 }
 
@@ -720,7 +883,6 @@ body {
   flex-direction: column;
   padding: 4.3rem;
   background-color: #240B35;
-  padding-bottom: 2.3em;
   border-radius: 10px 0px 0px 10px;
 }
 
@@ -740,4 +902,16 @@ body {
 
 .pip-span_NConta:hover {
   color: #ed9595;
+}
+
+.pip-div_inImg {
+  background-color: rgba(40, 11, 55, 0.4784313725);
+  height: 664.94px;
+  display: flex;
+  justify-content: center;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.pip-img_inImg {
+  width: 70%;
 }/*# sourceMappingURL=login.css.map */

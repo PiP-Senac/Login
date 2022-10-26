@@ -1,0 +1,49 @@
+@import "./Variaveis.scss";
+
+
+.pip-div_separator{
+border-bottom: 1px solid rgba(255, 255, 255, 0.24);
+margin-bottom: 1.3rem;
+}
+
+.pip-div_otreg{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.pip-div_gle{
+margin-right: 1.4rem;
+}
+
+.pip-div_gle,.pip-div_fcb{
+    padding: .6rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    background-color: #2f0f44;
+    transition: transform 300ms;
+}
+
+.pip-a_gle,.pip-a_fcb{
+display: flex;
+align-items: center;
+flex-direction: row;
+}
+
+.pip-img_gle{
+    filter: invert(22%) sepia(71%) saturate(3590%) hue-rotate(352deg) brightness(96%) contrast(86%);
+}
+
+.pip-img_fcb{
+    filter: invert(14%) sepia(95%) saturate(2528%) hue-rotate(231deg) brightness(91%) contrast(109%);
+}
+
+.pip-img_gle,.pip-img_fcb{
+    width: 32px;
+}
+
+.pip-div_gle:hover,.pip-div_fcb:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 7px 1px #2d133f;
+}
